@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "Muskan",
+      "age": "22",
+      "gender": "female",
+      "country": "India",
+      "profession": "Student",
+      "id": 1
+    },
+    {
+      "name": "Ritik",
+      "age": "23",
+      "gender": "male",
+      "country": "UK",
+      "profession": "Employed",
+      "id": 2
+    },
+    {
+      "name": "Parth",
+      "age": "24",
+      "gender": "male",
+      "country": "China",
+      "profession": "Student",
+      "id": 3
+    },
+    {
+      "name": "Anand",
+      "age": "25",
+      "gender": "male",
+      "country": "India",
+      "profession": "Employed",
+      "id": 4
+    }
+  ]
+}

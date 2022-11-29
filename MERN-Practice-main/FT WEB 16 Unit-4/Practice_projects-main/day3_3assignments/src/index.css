@@ -1,0 +1,38 @@
+.list-container{
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  gap:3%;
+}
+.prev_next-btns{ 
+  margin-top:40px;
+  margin-left:30%;
+  display: grid;
+  text-align:center;
+  grid-template-columns: repeat(3,16%);
+  gap:2%
+}
+a{ 
+  margin-left :40px;
+  font-size:20px;
+
+
+  color:rgb(250, 246, 246);
+ 
+}
+.navbar{
+  background:rgb(63, 47, 47);
+  padding:6px;
+}
+.form_container{
+text-align:center;
+}
+input{
+  width:400px;
+  margin-top: 20px;
+  padding: 3px
+}
+.submit{
+  margin-top: 20px;
+  width: 100px;
+  padding:10px
+}

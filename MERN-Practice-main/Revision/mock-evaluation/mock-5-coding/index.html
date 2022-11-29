@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form action="" id="form" >
+      <h4>Fill Detaisl Here</h4>
+      <div>
+        <label for="">Select Your Country</label>
+          <select name="country" id="country">
+           <option value="">Select Country</option>
+           <option value="India">India</option>
+           <option value="Pakistan">Pakistan</option>
+           <option value="Srilanka">Srilanka</option>
+           <option value="Australia">Australia</option>
+           <option value="Canada">Canada</option>
+           <option value="Brazil">Brazil</option>
+           <option value="China">China</option>
+           <option value="France">France</option>
+         </select>
+      </div>
+      <div>
+        <label for="">Enter Your City</label>
+         <input id="city" type="city" /><br />
+      </div>
+       <div>
+        <label for="">Enter Population</label>
+        <input id="pop" type="number" /> <br />
+      </div>
+      <input type="submit" />
+    </form>
+    <div id="sf" >
+        <select name="filter" id="filter">
+            <option value="">Filter By Country</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Srilanka">Srilanka</option>
+             <option value="Australia">Australia</option>
+             <option value="Canada">Canada</option>
+             <option value="Brazil">Brazil</option>
+             <option value="China">China</option>
+             <option value="France">France</option>
+        </select>
+        <select name="sort" id="sort">
+            <option value="">Sort By Population</option>
+            <option value="asp">Ascending Population</option>
+            <option value="dsp">Decending Population</option>
+        </select>
+    </div>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Population</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tbody  id="tbody" ></tbody>
+        </thead>
+    </table>
+    <div id="nd" ></div>
+    <div id="modal">
+        <div>
+          <button id="close">&times;</button>
+          <form action="" id="form1" >
+            <h4>Enter Population to edit</h4>
+            <input type="number" id="pop1" >
+            <input type="submit">
+          </form>
+        
+        </div>
+      </div>
+  </body>
+</html>
+<script src="./index.js"></script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+
+    </select>
+    <input type="Number" id="age" placeholder="Put Your Year Of Birth" value="">
+    <button onClick="checkEligibility()">Check eligibilty</button>
+    <p id="pTag">Show result here</p>
+</body>
+</html>
+<script>
+    function checkEligibility(){
+        var current_year = 2022;
+        var given_age= document.getElementById("age").value;
+        var res=current_year-given_age;
+        var dgender=document.getElementById("gender");
+    for(var i = 0;i < dgender.length;i++){
+        var gen = (dgender[i].value);
+    }
+      
+        
+        if(res >= 21 && gen=="Male"){
+            document.getElementById("pTag").innerText="Eligible for Marraiage";
+
+        }
+      else  if(res >= 18 && gen=="Female"){
+            document.getElementById("pTag").innerText="Eligible for Marraiage";
+
+        }
+        else{
+            document.getElementById("pTag").innerText="Not Eligible for Marraiage";
+
+        }
+    }
+   
+</script>

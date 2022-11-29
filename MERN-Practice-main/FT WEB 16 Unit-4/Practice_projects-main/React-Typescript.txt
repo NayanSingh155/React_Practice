@@ -1,0 +1,23 @@
+ Type of children in typescript <Heading> <children><children><headings>
+ type {
+     children:React.ReactNode;
+ }
+ //type OscarProps = {
+    children:React.ReactNode
+}
+
+if we have to make key optional then put a  question mark in the key name
+type {
+    name ?:string
+}
+
+for button
+handleClick:(event:React.MouseEvent<HTMLButtonElement> 
+
+for input
+  handleChange:(event:React.ChangeEvent<HTMLInputElement>
+
+  for styling (see container component)
+  type containerStyleProp={
+    styles:React.CSSProperties
+}

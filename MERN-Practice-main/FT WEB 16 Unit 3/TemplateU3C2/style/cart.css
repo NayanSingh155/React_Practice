@@ -1,0 +1,41 @@
+
+img{
+    height: 250px;
+    width: 100%;
+}
+#cart {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    text-align: center;
+   
+}
+#cart div {
+   
+    padding-bottom: 15px;
+}
+#remove , button {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 3px 6px;
+
+}
+#total-price {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+button {
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

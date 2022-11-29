@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>CLick me</button>
+  </body>
+</html>
+
+<script>
+  //event - onClick
+  //eventListener - onClick
+  // addEventListener("event name", functionName)
+  // you should not invoke this function
+  // instead of onclick - click
+
+  document.querySelector("button").addEventListener("click", myFunction);
+
+  
+  function myFunction() {
+    console.log("someone clicked me");
+  }
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formTag">
+      <input type="text" placeholder="enter name" id="name" />
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <!-- <button onclick="submitFun()">Submit</button> -->
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<script>
+  // steps:
+  // 1. wrap every input inside a form
+  // 2. instead of taking button, you should take input type=submit
+  // 3. write eventListener to the form tag and eventName should be submit
+  // 4. whenever you use forms,it will try to send data to sever,in this process
+  // this page will get refreshed - default bahavior of forms
+  // write event.preventDefault() after function
+
+  document.querySelector("#formTag").addEventListener("submit", submitFun);
+
+  // whenever you write an event, corresponding to that event an event obj will be created
+  // that event object you can access in function parameter
+
+  function submitFun(event) {
+    console.log(event);
+    event.preventDefault();
+    var name = document.querySelector("#name").value;
+    var gender = document.querySelector("#gender").value;
+
+    console.log(name, gender);
+  }
+</script>

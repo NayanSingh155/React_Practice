@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="amazon">Amazon</div>
+        <div>
+            <div id="sign">Sign Up</div>
+            <div id="log">Log In</div>
+            <div id="men">Men</div>
+            <div id="women">Women</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+document.querySelector("#amazon").addEventListener("click",function(){
+    window.location.href="home.html";
+})
+document.querySelector("#sign").addEventListener("click",function(){
+    window.location.href="Signin.html";
+})
+document.querySelector("#log").addEventListener("click",function(){
+    window.location.href="Login.html";
+})
+document.querySelector("#men").addEventListener("click",function(){
+    window.location.href="men.html";
+})
+</script>

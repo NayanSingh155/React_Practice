@@ -1,0 +1,38 @@
+#box {
+    width: 20%;
+    margin: auto;
+   height: 300px;
+   margin-top: 30px;
+   padding: 10px;
+   box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+input{
+    margin-bottom: 20px;
+}
+
+button{
+    margin-left: 70px;
+    background-color: rgb(231, 26, 88);
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+}

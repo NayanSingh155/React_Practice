@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+        #btn1 {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     var btnObj = [
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    ];
+
+    btnObj.map(function(elem,index,arr){
+        var btn = document.createElement("button");
+        btn.innerText=elem.text;
+        btn.style.background=elem.bgcolor;
+        btn.style.color=elem.color;
+        btn.setAttribute("id","btn1");
+        document.querySelector("body").append(btn);
+
+    });
+    var link = document.createElement("a");
+    link.innerText="Link";
+    link.style.background="pink";
+    document.querySelector("body").append(link);
+</script>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+      }
+
+      /* grid -- you should not fix height in childs */
+      /* mobile - first
+      desktop-first */
+
+      #container > div {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      #container > div > :not(img) {
+        padding-left: 10px;
+      }
+
+      /* p + p {
+        margin-bottom: 15px;
+        text-decoration: underline;
+      } */
+
+      .line {
+        line-height: px;
+      }
+
+      @media all and (min-width: 380px) and (max-width: 700px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto auto;
+          gap: 20px;
+        }
+        /* h1 {
+          text-align: center;
+        } */
+        h3 {
+          font-size: 16px;
+        }
+      }
+
+      @media all and (min-width: 50px) and (max-width: 379px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 20px;
+        }
+        /* h1 {
+          text-align: center;
+        } */
+      }
+
+      /* large screens
+      @media all and (min-width:701px){
+
+      } */
+
+      .space {
+        margin-top: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PSC WEB-16</h1>
+    <div id="container">
+      <div>
+        <img
+          src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog1.jpg.pagespeed.ic.s1W931fRN7.webp"
+          alt=""
+        />
+        <p>Fashion Tips</p>
+        <h3>What Curling Irons Are The Best Ones</h3>
+        <p>
+          Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+          voluptas ire, delectus.
+        </p>
+        <p>Read more</p>
+      </div>
+      <div>
+        <img
+          src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog1.jpg.pagespeed.ic.s1W931fRN7.webp"
+          alt=""
+        />
+        <p>Fashion Tips</p>
+        <h3>What Curling Irons Are The Best Ones</h3>
+        <p>
+          Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+          voluptas ire, delectus.
+        </p>
+        <p>Read more</p>
+      </div>
+      <div>
+        <img
+          src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog1.jpg.pagespeed.ic.s1W931fRN7.webp"
+          alt=""
+        />
+        <p>Fashion Tips</p>
+        <h3>What Curling Irons Are The Best Ones</h3>
+        <p>
+          Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+          voluptas ire, delectus.
+        </p>
+        <p>Read more</p>
+        <h1></h1>
+        <p></p>
+        <img />
+      </div>
+    </div>
+
+    <div class="line">
+      <p>I am <span>Paragraph</span></p>
+
+      <h1>I am h1 tag</h1>
+      <p class="space">I am P tag</p>
+
+
+    </div>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

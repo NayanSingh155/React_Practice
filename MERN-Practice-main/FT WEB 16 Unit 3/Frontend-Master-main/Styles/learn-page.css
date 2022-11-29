@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+.path-container,
+.elective-container {
+  width: 100%;
+  padding-top: 40px;
+  background-color: #222222;
+}
+.elective-container {
+  padding-bottom: 40px;
+}
+
+.p-top,
+.p-bottom {
+  max-width: 950px;
+  margin: auto;
+}
+
+.p-top {
+  text-align: center;
+  color: #fff;
+}
+.p-top svg {
+  width: 130px;
+}
+.p-top h1 {
+  margin-bottom: 15px;
+}
+.p-top h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.p-bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff69;
+  padding-top: 20px;
+  justify-content: center;
+}
+.p-bottom .p-box {
+  max-width: 303px;
+  background-color: #383838;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 20px;
+  text-align: center;
+}
+
+.circular {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.circular .inner,
+.circular .outer,
+.circular .circle {
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.circular .inner {
+  height: 164px;
+  width: 164px;
+  background-color: #222222;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.circular .circle {
+  z-index: 1;
+  box-shadow: none;
+}
+.circular .numb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4158d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular .numb.orange {
+  color: #c63528;
+}
+.circular .numb p {
+  font-size: 70px;
+  color: #fff;
+}
+.circular .numb .img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  font-size: 95px;
+  color: #000;
+  opacity: 0.3;
+}
+.circular .numb .img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 220px, 220px, 100px);
+}
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 200px, 0px);
+}
+.circle .bar .progress {
+  background: #4158d0;
+}
+.circle .bar .progress {
+  background: #c63528;
+}
+.circle .bar .progress.js {
+  background: #b3911c;
+}
+.circle .bar .progress.css {
+  background: #278cc7;
+}
+.circle .bar .progress.node {
+  background: #00873a;
+}
+.circle .bar .progress.react {
+  background: #008697;
+}
+.circle .bar .progress.vue {
+  background: #00bb83;
+}
+
+.circle .bar .progress.angular {
+  background: #ff002f;
+}
+.circle .left .progress {
+  z-index: 1;
+  animation: left 1s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  z-index: 3;
+  transform: rotate(180deg);
+}
+.circle .right .progress {
+  animation: right 1s linear both;
+  animation-delay: 1s;
+  /* animation: rightRreverse 4s linear both;
+  animation-delay: 16s; */
+}
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .dot {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 10px;
+  margin-top: -5px;
+  animation: dot 2s linear both;
+  transform-origin: 0% 50%;
+  display: none;
+}
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.circle .reverse-left .progress {
+  animation: leftRreverse 1s linear both;
+  animation-delay: 1s;
+}
+
+@keyframes leftRreverse {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.circle .reverse .progress {
+  animation: rightRreverse 1s linear both;
+}
+@keyframes rightRreverse {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes dot {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
+  }
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+@keyframes dot-reverse {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
+  }
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+
+.desc {
+  padding: 0 10px;
+  color: #fff;
+  height: 157px;
+  line-height: 25px;
+}
+.desc .title {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.desc p {
+  font-size: 16px;
+  word-spacing: 1;
+  margin-bottom: 20px;
+}
+
+.p-box button {
+  margin: 0 auto;
+  min-width: 175px;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.p-box button.orange {
+  background-color: #c63528;
+}
+.p-box button.js {
+  background-color: #b3911c;
+}
+.p-box button.css {
+  background-color: #278cc7;
+}
+.p-box button.node {
+  background-color: #00873a;
+}
+.p-box button.react {
+  background-color: #008697;
+}
+.p-box button.vue {
+  background-color: #00bb83;
+}
+.p-box button.angular {
+  background-color: #ff002f;
+}

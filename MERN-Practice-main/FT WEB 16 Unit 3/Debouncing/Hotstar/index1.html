@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  #2e3035;;
+        }
+        #box {
+            display: flex;
+            box-sizing: border-box;
+            margin: auto;
+            width: 55%;
+            margin-top: 100px;
+            background-color:teal;
+            
+
+        }
+        #box img {
+            width:100%;
+        }
+        #box div{
+          margin-top: 30px;
+          margin-left: 15px;
+          margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+</html>
+<script>
+     async function get(){
+    try {
+      //  let search = document.getElementById("movie").value;
+      let p = localStorage.getItem("title")
+
+        let res= await fetch(`https://www.omdbapi.com/?t=${p}&apikey=fb68bfc5`)
+        let  data = await res.json();
+           console.log(data)
+           append(data)
+
+           
+    }
+    catch(err) {
+        console.log(err)
+    }
+}
+get()
+function append(data){
+    let h1 = document.createElement("h1");
+    h1.innerText=data.Title;
+    let img = document.createElement("img");
+    img.src=data.Poster;
+    let date= document.createElement("h3");
+    date.innerText="Released in "+data.Year;
+    let act =document.createElement("h3");
+    act.innerText="Actors :"+data.Actors;
+    let lan =document.createElement("h3");
+    lan.innerText="Language :"+data.Language;
+    let des = document.createElement("h4");
+    des.innerText="Description :"+data.Plot;
+    let rat =document.createElement("h3");
+    rat.innerText="Rating :"+data.Ratings[0].value;;
+    let box1 = document.createElement("div");
+    box1.append(h1,date,act,lan,des,rat);
+    document.querySelector("#box").append(img,box1)
+
+    
+}
+</script>

@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.join-now-container {
+  width: 100%;
+  background-color: #222222;
+  color: #fff;
+}
+
+.join-head {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.join-head h1 {
+  font-size: 46px;
+  margin: 0 20px 10px;
+}
+
+.join-head h2 {
+  font-size: 31px;
+  margin: 0 20px 10px;
+}
+
+.lang-logo-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.lang-logo-wrap > .lang-logo {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+}
+.lang-logo-wrap > .lang-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.goto {
+  padding-top: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+.goto a {
+  color: #dd625e;
+}
+
+.subscriptions {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.sub-box {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  border-top: 8px solid #3e3e3e;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 40px;
+  background-color: #111111;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sub-box:hover {
+  background-color: #1a1a1a;
+}
+
+.sub-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sub-price {
+  background: #d85519;
+  padding: 4px 16px;
+  border-radius: 4px;
+  position: absolute;
+  right: -32px;
+  top: -4px;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.sub-box.active {
+  transform: scale(1.091);
+  background-color: #90221e;
+  border-top: 8px solid #c02d28;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.registration-container {
+  background: #111;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%);
+  margin-bottom: 30px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 30px 30px 20px;
+  max-width: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.registration-container form {
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+.registration-container h2 {
+  margin-bottom: 20px;
+}
+.vertical-margin {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.vertical-margin label {
+  margin-bottom: 5px;
+}
+
+.vertical-margin input,
+.vertical-margin select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  color: #222;
+  display: block;
+  font-family: inherit;
+  padding: 8px 10px;
+  font-size: 17px;
+  width: 100%;
+}
+.vertical-margin select {
+  width: 104%;
+}
+.vertical-margin input:focus {
+  border-color: #e66225;
+  outline: 0;
+}
+
+.horizontal {
+  display: flex;
+}
+.horizontal > div {
+  width: 50%;
+}
+.horizontal > div:first-child {
+  margin-right: 41px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  color: #222;
+  display: block;
+  font-family: inherit;
+  padding: 20px 10px;
+  font-size: 17px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.card:hover {
+  border-color: #e66225;
+  outline: 0;
+}
+
+.card #card_number {
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  border: none;
+  outline: none;
+}
+.card #expiry {
+  position: absolute;
+  top: 10px;
+  right: 57px;
+  width: 10%;
+  border: none;
+  outline: none;
+}
+.card #cvc {
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  top: 10px;
+  border: none;
+  outline: none;
+}
+
+.term-of-service {
+  background: #222;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.term-of-service a {
+  color: #dd625e;
+}
+
+.submit-container input[type="submit"] {
+  font-size: 19px;
+  padding: 20px 30px;
+  background: #c02d28;
+  border: none;
+  box-shadow: none;
+  max-width: 190px;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+  transition: background 0.2s ease;
+}
+.submit-container input[type="submit"]:hover {
+  background: #d43530;
+}
+
+.twitter-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.twitter-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  color: #222;
+  line-height: 1.4;
+  min-width: 240px;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+}
+
+.twitter-box-top {
+  color: #222;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile-img {
+  width: 10%;
+  margin-right: 10px;
+}
+.profile-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+.user-name {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.twit-icon {
+  margin-left: auto;
+  font-size: 27px;
+  color: #1da1f2;
+}
+
+.twitter-box-mid {
+  font-size: 17px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.twitter-box-bottom {
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #8a8a8a;
+  padding-top: 10px;
+}
+
+.que-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0 80px;
+  text-align: center;
+}
+.que-container h3 {
+  font-size: 27px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.que-container p {
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+}
+.que-container p a {
+  color: #dd625e;
+}

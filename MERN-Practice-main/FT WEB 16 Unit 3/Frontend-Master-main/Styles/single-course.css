@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: Open Sans, sans-serif;
+}
+
+.course-head {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #222222;
+}
+
+.course-head-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+}
+
+.wrap-left {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.wrap-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap-right h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.instructor {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 12px;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 80px;
+  overflow: hidden;
+  width: 80px;
+  margin-right: 12px;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.details .name {
+  color: #e6e6e6;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.details .org {
+  color: #8a8a8a;
+  font-size: 16px;
+}
+
+.duration {
+  margin-top: 12px;
+}
+
+.duration .time {
+  color: #8a8a8a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.duration .time strong {
+  background: #8a8a8a;
+  border-radius: 8px;
+  color: #222;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.course-details-container {
+  width: 100%;
+  background-color: #000000;
+}
+
+.course-detail-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+}
+
+.video-container {
+  width: 60%;
+  min-height: 360px;
+  margin-right: 20px;
+}
+.video-container iframe {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.course-desc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desc-top .desc {
+  color: #e6e6e6;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.desc-bottom {
+  width: 100%;
+}
+
+.desc-bottom a {
+  font-size: 19px;
+  padding: 20px 30px;
+  background: #c02d28;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.desc-bottom a:hover {
+  background: #d43530;
+}
+
+@media all and (min-width: 50px) and (max-width: 1004px) {
+  .course-detail-wrap {
+    flex-wrap: wrap;
+  }
+  .course-detail-wrap .video-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .course-detail-wrap .video-container,
+  .course-detail-wrap .course-desc {
+    width: 100%;
+  }
+  .wrap-left {
+    width: 60px;
+    height: 60px;
+  }
+  .wrap-right h1 {
+    font-size: 21px;
+  }
+}

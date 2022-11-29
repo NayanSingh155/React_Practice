@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <style>
+     * {
+       text-align: center;
+     }
+     #show_products {
+       background-color: red;
+       color: aqua;
+       margin-top: 50px;
+     }
+     input {
+       margin-bottom: 20px;
+     }
+     select{
+margin-bottom: 20px;
+     }
+     #submit {
+       background-color: red;
+       color: aqua;
+       width: 80px;
+     }
+   
+   </style>
+  </head>
+
+  <body>
+    <div id="menu">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+   <button id="show_products">Show Products</button>
+   
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "product_form"-->
+
+      <!--Create four inputs to accept name, price, type and image-->
+      <!--give the inputs following respective id's, "name", "price","type","image"-->
+      <!--create a submit option to submit form, give it html id as "submit"-->
+      <form action="" id="myForm">
+        <input type="name" placeholder="ENter product's name" id="name">
+        <br>
+        <input type="price" id="price" placeholder="ENter Price">
+        <br>
+        <span>Type</span>
+         <select name="type" id="type">
+           <option value="sneakers">Sneakers</option>
+           <option value="loafers">Loafers</option>
+           <option value="sports">Sports</option>
+           <option value="formals">Formals</option>
+           <option value="casuals">Casuals</option>
+           <option value="outdoor">Outdoors</option>
+         </select>
+         <br>
+         <input type="img" id="image" placeholder="Put Image URL">
+         <br>
+         <input type="submit" placeholder="SUBMIT" id="submit">
+      </form>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>

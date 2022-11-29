@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+            *{
+    padding: 0;
+    margin: 0;
+}
+body {
+       font-size: 100%;
+        font-family: Proxima Nova Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+        background-color: black;
+        color: #fff;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+#navbar {
+    width: 85%;
+    margin: auto;
+    height: 65px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-bottom:1px solid pink;
+    
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  
+}
+#logo {
+    margin-left: 20px;
+    display: flex;
+    
+}
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+#navbar ul li {
+    width: auto;
+    margin-right: 25px;
+    font-size: 20px;
+}
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+#navbar ul li a:hover {
+    border-bottom: 1px solid aqua;
+    
+
+ }
+ #login-form-div {
+    height: 250px;
+    width: 300px;
+    margin:auto;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 70px;
+    background-color: #2e3035;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+h1{
+    padding-top: 30px;
+    color: aqua;
+}
+input {
+    
+    color:black;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+#form > input:last-child{
+    
+    background-color: teal;
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 15px;
+
+}
+a{
+    text-decoration: none;
+}
+
+#logo label {
+  
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#logo img{
+   width: 30px;
+   height: 23px;
+   margin-right: 8px;
+   margin-top: 3px;
+   
+  
+  
+}
+
+        </style>
+        
+    </head>
+
+    <body>
+        <nav>
+            <div id="navbar">
+                <div id="logo"><img src="https://i.pinimg.com/originals/14/e5/84/14e584760464db3248dd7c57e15d577a.jpg" alt="logo"><label for="">YouTube</label></div>
+
+                <ul>
+                    <li>
+                       <a href="index.html">Home</a>
+                    </li>
+                   
+                    <li>
+                        <a href="signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="login-form-div">
+       <!--Write form input elements here-->
+                <h1>Log In</h1>
+                    <form id="form">
+                      <input id="user" type="text" placeholder="Enter Email" />
+                      <br>
+                      <input id="pass" type="password" placeholder="Enter password" />
+                      <br>
+                      <input type="submit" value="Log in" />
+                    </form>
+                    <p>New User? <span><a href="signup.html">Sign Up</a></span></p>
+
+        </div>
+    </body>
+
+</html>
+<script >
+    
+    var regdUsers = JSON.parse(localStorage.getItem("signUpDetails"));
+console.log(regdUsers);
+
+document.querySelector("#form").addEventListener("submit", formSubmit);
+
+var form = document.querySelector("#form");
+
+
+function formSubmit(event) {
+  event.preventDefault();
+
+  var user = form.user.value;
+  var pass = form.pass.value;
+  console.log(user, pass);
+
+  var flag= false;
+  for (var i = 0; i < regdUsers.length; i++) {
+    if (regdUsers[i].user == user && regdUsers[i].pass == pass) {
+      flag=true;
+
+    } 
+  }
+  if(flag==true){
+      
+      alert("Successfully Logged In")
+      window.location.href="index.html";
+  }
+  else{
+    alert("Invalid Credentials")
+
+  }
+} 
+</script>

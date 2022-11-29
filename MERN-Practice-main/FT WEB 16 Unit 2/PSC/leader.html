@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min & Max Leaderboard</title>
+    <style type="text/css">
+      .float-l {
+        float: left;
+        margin-left: 500px;
+      }
+      .float-r {
+        float: right;
+        margin-right: 500px;
+      }
+      .clear {
+        clear: both;
+      }
+      #min-score {
+        background-color: red;
+      }
+      #max-score {
+        background-color: rgb(0, 184, 0);
+      }
+      .score-box {
+        height: 70px;
+        width: 160px;
+        border: 2px solid black;
+        font-size: 40px;
+        line-height: 70px;
+      }
+      div {
+        text-align: center;
+      }
+      #score {
+        margin: auto;
+        width: 350px;
+        height: 100px;
+        background-color: grey;
+        font-size: 50px;
+      }
+      #keyboard {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        grid-gap: 20px;
+        width: 340px;
+        margin: 20px auto;
+      }
+      #keyboard > div {
+        border: 2px solid black;
+        font-size: 30px;
+        line-height: 100px;
+      }
+      .green {
+        background-color: rgb(0, 119, 0);
+      }
+      .orange {
+        background-color: rgb(250, 112, 0);
+      }
+      .purple {
+        background-color: purple;
+      }
+      #box-0 {
+        grid-area: 4/2;
+      }
+      #enter {
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        padding: 10px 120px;
+        border-radius: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top">
+        <div class="float-l">
+          <div id="min-score" class="score-box">42</div>
+          <h1>MIN</h1>
+        </div>
+        <div class="float-r">
+          <div id="max-score" class="score-box">2019</div>
+          <h1>MAX</h1>
+        </div>
+      </div>
+      <div id="mid" class="clear">
+        <h1>SCORE</h1>
+        <div id="score"></div>
+        <div id="keyboard">
+          <div id="box-1" class="green" onclick="press('1');">1</div>
+          <div id="box-2" class="orange" onclick="press('2');">2</div>
+          <div id="box-3" class="green" onclick="press('3');">3</div>
+          <div id="box-4" class="orange" onclick="press('4');">4</div>
+          <div id="box-5" class="orange" onclick="press('5');">5</div>
+          <div id="box-6" class="orange" onclick="press('6');">6</div>
+          <div id="box-7" class="green" onclick="press('7');">7</div>
+          <div id="box-8" class="orange" onclick="press('8');">8</div>
+          <div id="box-9" class="green" onclick="press('9');">9</div>
+          <div id="box-0" class="purple" onclick="press('0');">0</div>
+        </div>
+      </div>
+      <div id="bottom">
+        <button id="enter" onclick="setScores();">ENTER</button>
+      </div>
+    </div>
+    <script>
+      var bag = "";
+      var max = 2019;
+      var min = 42;
+      function press(num) {
+        //console.log(num);
+        bag = bag + num;
+        console.log(bag);
+        document.querySelector("#score").innerText = bag;
+      }
+
+      function setScores() {
+        if (Number(bag) > max) {
+          max = bag;
+          document.querySelector("#max-score").innerText = max;
+        }
+        bag = "";
+        document.querySelector("#score").innerText = "";
+      }
+    </script>
+  </body>
+</html>

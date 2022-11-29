@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://th.bing.com/th/id/R.1cb2c54d6d02325dd1b25ff461bc4518?rik=%2bVpuwsBuVrRQ7A&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fStars-wallpapers-HD-free-download.jpg&ehk=4Hnqz1A7wtGCH56U6hiz3pfTEHFSQ45P%2fxOfX%2flJ5H8%3d&risl=&pid=ImgRaw&r=0"); background-size: cover;
+        }h1{
+            text-align: center;
+        }.main{
+            margin: 63px 540px;display: flex;
+        }.stick{
+            height: 600px;width:10px;background: radial-gradient(green,red,white);border-top-left-radius: 10px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+        }.flag{
+            width: 360px;height: 270px;box-shadow: 0px 0px 90px 1p #989;background-color: transparent;position: relative;
+        }.top{
+            background-color: #f93;height: 90px;
+        }.middle{
+            background: azure;display: flex;height: 90px;justify-content: center;align-items: center;
+        }.bottom{
+            background-color: green;height: 90px;
+        }.wheel{
+           height: 80px;width: 80px;border: 1px solid darkblue;margin: 0 auto;position: relative;border-radius: 45px;animation-name: wheel;animation-duration: 5s;animation-iteration-count: infinite;animation-timing-function: linear;
+        }
+        .wheel .line{
+            width: 100%;height: 1px ;display: inline-block;position:absolute;left: 0%;background-color: darkblue;margin: 38px 0%;
+        }@keyframes wheel{
+         0%{
+            transform: rotate(0deg);
+         }100%{
+            transform: rotate(360deg);
+         }
+        } .wave{
+            position: absolute;height: 100%;width: 100%;background-image: linear-gradient(128deg,rgba(89,72,21,0) 39%,rgba(250,245,245,0.8474025974025974) 46%, rgba(89,72,21,0) 53%);animation: wavy 3s infinite linear; 
+        }@keyframes wavy{
+            0%{
+                background-position: -400px 0px,-400px 0px,-400px,0px,-400px 0px;;
+            }100%{
+                background-position: 800px 0px,800px 0px,800px 0px,800px 0px;;
+            }
+        }audio{
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="stick"></div>
+        <div class="flag">
+        <div class="wave"></div>
+        <div class="top"></div>
+        <div class="middle">
+          <div class="wheel">
+            <span style="transform:rotate(15deg)"  class="line"></span>
+            <span style="transform:rotate(30deg)" class="line"></span>
+            <span style="transform:rotate(45deg)" class="line"></span>
+            <span style="transform:rotate(60deg)" class="line"></span>
+            <span style="transform:rotate(75deg)" class="line"></span>
+            <span style="transform:rotate(90deg)" class="line"></span>
+            <span style="transform:rotate(105deg)" class="line"></span>
+            <span style="transform:rotate(120deg)" class="line"></span>
+            <span style="transform:rotate(135deg)" class="line"></span>
+            <span style="transform:rotate(150deg)" class="line"></span>
+            <span style="transform:rotate(165deg)" class="line"></span>
+            <span style="transform:rotate(180deg)" class="line"></span>
+          </div>
+        </div>
+        <div class="bottom"></div>
+        <audio src="./Anthem _ Instrumental.mp3" controls autoplay>Play</audio>
+      </div>
+    </div>
+    <h1><span style="color:#ffa500" >Happy </span><span style="color: aliceblue;" >Independemce </span><span style="color:#00ff56;" >Day</span></h1>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+       font-size: 100%;
+        font-family: Proxima Nova Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+        background-color: black;
+        color: #fff;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+}
+#navbar {
+    width:100%;
+  
+    height: 65px;
+   
+    padding-top: 15px;
+    border-bottom:0.1px solid pink;
+    background-color : #2e3035;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+    /* position: fixed; */
+  
+}
+#logo {
+    margin-left: 20px;
+    display: flex;
+    
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+#navbar ul li {
+    width: auto;
+    margin-right: 25px;
+    font-size: 20px;
+}
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+#navbar ul li a:hover {
+    border-bottom: 1px solid aqua;
+}
+input{
+            background-color: #000000d0;
+            color: pink;
+            width: 600px;
+            outline: none;
+            height: 25px;
+            border: none;
+            /* border: 1px solid pink; */
+            
+        }
+        input:hover {
+            border: 1px solid #fff;
+        }
+        #logo label {
+  
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#logo img{
+   width: 30px;
+   height: 23px;
+   margin-right: 8px;
+   margin-top: 3px;
+   
+  
+  
+}
+  input + i{
+    background-color: #000000d0;
+    margin-left: 10px;
+    border: 1px solid #fff  ;
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+input + i + span {
+    background-color: #000000d0;
+    margin-left: 10px;
+    border: 1px solid #fff  ;
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#search {
+    position:relative;
+}
+#list {
+    width: 600px;
+    /* height: 200px; */
+    max-height: 200px;
+    background-color: #2e3035;
+    position: absolute;
+    margin-top: 13px;
+    display: none;
+    padding: 15px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 35px;
+    overflow-x: scroll;
+    overflow-x: hidden;
+
+
+    
+}
+#list p {
+    font-size: 15px;
+}
+#list p:hover {
+    background-color: #000000d0;
+}
+
+#box {
+            width: 95%;
+            margin: auto;
+            height: 550px;
+            margin-top: 20px;
+            /* margin-left:20px; */
+            display: flex;
+            /* padding-top: 20px; */
+            color: #fff;
+
+        }
+        #box2 {
+        width: 30%;
+           margin-left: 15px;
+           /* border: 1px solid white; */
+        
+
+       }
+       #box2 img {
+           height: 50pxpx;
+           width: 100%;
+       }
+       #box2 h4 {
+        margin-top: -7px;
+           font-size: 12px;
+           margin-bottom: 3px;
+           margin-left: 5px;
+           
+       }
+       #box2 h6 {
+        /* margin-top: -7px; */
+           font-size: 8px;
+           margin-left: 5px;
+           
+       }
+       
+       #box1 h4,h6 {
+           margin-top: 28px;
+           font-size: 23px;
+       }
+       #box1 h6{
+        font-size: 18px;
+       }
+       #box1 p {
+        margin-top: 28px;
+           font-size: 15px;
+           line-height: 15px;
+           margin-bottom: 40px;
+       }
+       #box1 {
+           width: 70%;
+           
+           /* border: 1px solid white; */
+       }
+       
+       #box1 iframe {
+       width: 100%;
+       height: 360px;
+       }
+        
+    </style>
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+  
+</head>
+<body>
+   
+   
+        
+    
+        <div id="navbar">
+               
+                <div id="logo"><img src="https://i.pinimg.com/originals/14/e5/84/14e584760464db3248dd7c57e15d577a.jpg" alt="logo"><label for="">YouTube</label></div>
+
+            
+           <div>
+                <input type="search" oninput="get()" placeholder=" Search..." id="search">  <i class='fa fa-search' id="'sear" style='color: white'></i> <span class='bi bi-mic' style='color: white'></span>
+                <div id="list">
+                    
+                </div>
+            </div>
+           <div>
+            <ul>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="signup.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+   
+   
+       
+
+   
+    <div id="box">
+       <div id ="box1">
+Hii
+       </div>
+       <div id="box2"></div>
+    </div>
+</body>
+</html>
+<script>
+ //  let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Football&key=AIzaSyAwur6Jn8zsPi-wOje2QS8xQANdYYorRdc`
+       
+     let box1 =  document.getElementById("box1")
+     const append = (data) => {
+        box1.innerHTML="";
+         data.map((el) => {
+            // let  div1 = document.createElement("div");
+             let  div = document.getElementById("box1")
+             let p = document.createElement("h4");
+             p.innerText=el.snippet.title;
+             let i = document.createElement("iframe")
+             i.src=`https://www.youtube.com/embed/${el.id.videoId}`
+             i.allow="fullscreen"
+             let channel = document.createElement("h6");
+             channel.innerText=el.snippet.channelTitle;
+             let des = document.createElement("p");
+             des.innerText=el.snippet.description;
+             div.append(i,p,channel,des)
+            
+             
+         })
+     }
+
+     
+    
+  
+
+ let get = async ()=> {
+    
+     try {
+        let search = document.getElementById("search").value;
+        let res = await fetch ( ` https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${search}&key=AIzaSyBgApXfGNpGVJ3B9Ox69pkF2eyvXMKdJEA`)
+        let data = await res.json();
+            // return data.items
+            console.log(data.items)
+            appendList(data.items)
+
+        }
+     catch(err){
+         console.log(err)
+     }
+ }
+ let list = document.getElementById("list");
+ 
+   let appendList = (data) => {
+    let search = document.getElementById("search").value;
+
+       list.innerHTML="";
+       data.map((el) => {
+        let p = document.createElement("p");
+             p.innerText=el.snippet.title;
+             list.append(p)
+             p.addEventListener("click", function () {
+      window.location.href = "index1.html";
+      localStorage.setItem("name", p.innerText);
+    });
+
+    // console.log(p)
+   
+
+    if (search !== "") {
+      list.style.display = "block";
+    }
+    if (search == "") {
+      list.style.display = "none";
+    }
+  });
+  if(data.length > 5){
+      list.style.overflowY="scroll";
+  }
+  else{
+      list.style.overflow="hidden";
+  }
+console.log(data.length)
+}
+
+document.onclick = function (even) {
+  if (even.target.id !== "search") {
+    list.style.display = "none";
+  }
+};
+       
+   
+//  console.log(name)
+
+let get1 = async ()=> {
+    
+    try {
+        let name = localStorage.getItem("name1")
+
+       let res = await fetch ( ` https://youtube.googleapis.com/youtube/v3/search?part=snippet&t=${name}&key=AIzaSyBgApXfGNpGVJ3B9Ox69pkF2eyvXMKdJEA
+`)
+             let data =await res.json();
+             console.log(data)
+              append(data.items)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+ get1()
+
+get2() 
+async function get2(){
+    try{
+        let name = localStorage.getItem("name1")
+
+let res = await fetch ( ` https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${name}&key=AIzaSyBgApXfGNpGVJ3B9Ox69pkF2eyvXMKdJEA
+`)
+      let data =await res.json();
+      console.log(data)
+       append1(data.items)
+}
+catch(err){
+ console.log(err)
+}
+    
+}
+  
+let box2 =  document.getElementById("box2")
+
+function append1(data){
+    box2.innerHTML="";
+         data.map((el) => {
+            // let  div1 = document.createElement("div");
+             let  div = document.getElementById("box2")
+             let div1 = document.createElement("div")
+             let div2 = document.createElement("div")
+             let p = document.createElement("h6");
+             p.innerText=el.snippet.title;
+             let i = document.createElement("img")
+             i.src=el.snippet.thumbnails.default.url;
+             let channel = document.createElement("h6");
+             channel.innerText=el.snippet.channelTitle;
+             div1.append(p,channel)
+             div2.append(i,div1)
+             div2.style.display="flex";
+             div.addEventListener("click",function(){
+                 window.location.href="index2.html"
+                 localStorage.setItem("name1",p.innerText)
+             })
+             div.append(div2)
+         })
+}
+
+
+</script>
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+<script src="https://kit.fontawesome.com/2ab2a134b6.js" crossorigin="anonymous"></script>

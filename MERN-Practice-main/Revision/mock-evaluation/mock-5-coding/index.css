@@ -1,0 +1,171 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+form {
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+select,
+input {
+    padding: 5px 10px;
+}
+
+select option {
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+form label {
+    text-align: left;
+
+    width: 50%;
+}
+
+form h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+form input,
+form select {
+    width: 50%;
+}
+
+form div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    ouline: none
+}
+
+input[type="submit"]:hover {
+    border: 1px solid black;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-bottom: 1px solid #333;
+}
+
+tr {
+    border-collapse: collapse;
+}
+
+tr th {
+    padding: 12px;
+    background-color: rgb(19, 39, 55);
+    color: aliceblue;
+    font-size: 14px;
+}
+
+td {
+    text-align: center;
+    padding: 7px;
+
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr>td:nth-child(5),
+tr>td:nth-child(6) {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #333;
+    color: aliceblue;
+
+}
+
+#sf {
+    width: 80%;
+    margin: 20px auto;
+    text-align: right;
+}
+
+#nd {
+    text-align: center;
+
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #000000d0;
+    transition: all .3s ease-in-out;
+}
+
+#modal>div {
+    background-color: aliceblue;
+    width: 20%;
+    margin: 140px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+    text-align: left;
+}
+
+#modal>div>div {
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-right: 1%;
+    cursor: pointer;
+
+}
+
+#modal>div>div:hover {
+    border: 1px solid black;
+}
+
+#modal button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 90%;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+#modal button:hover {
+    color: blue;
+}
+
+#modal form {
+    width: 90%;
+    border: none;
+}
+
+#modal input {
+    margin: 10px;
+}

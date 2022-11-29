@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+        input {
+            margin-left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Enter OTP
+    </h1>
+    <br>
+    <input type="text" id="otp">
+    <br>
+    <input  style="margin-left: 650px; margin-top: 10px;" id="sub" type="submit" name="Submit">
+</body>
+</html>
+<script>
+    document.querySelector("#sub").addEventListener("click",function(){
+        var otp1=document.querySelector("#otp").value;
+        if(otp1=="1234"){
+            alert("Payment Success");
+window.location.href="success.html";
+        }
+        else{
+            alert("Please fill correct OTP");
+        }
+    })
+</script>

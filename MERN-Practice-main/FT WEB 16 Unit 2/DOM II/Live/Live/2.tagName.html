@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>I am p1</p>
+    <h1>I am h1</h1>
+    <p>I am p2</p>
+    <h2>I am h2</h2>
+    <img src="www.masaischool.com" alt="masai">
+
+  </body>
+</html>
+
+<script>
+  /* tagNames are unique? no */
+
+  console.log(document.getElementsByTagName("h1")[0].innerText);
+  // returning an array
+
+  console.log(document.getElementsByTagName("h2")[0].innerText);
+
+  console.log(document.getElementsByTagName("p"));
+
+  var pTags = document.getElementsByTagName("p");
+
+  for (var i = 0; i < pTags.length; i++) {
+    console.log(pTags[i].innerText);
+  }
+
+  console.log(document.getElementsByTagName("img")[0].alt)
+
+
+  // id  - document.getElementById("")
+  // classNames - document.getElementsByClassName("")
+  // tagNames -- document.getElementsByTagName("")
+
+  //querySelector
+
+</script>

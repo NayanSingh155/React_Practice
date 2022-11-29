@@ -1,0 +1,28 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "Basic Link Shortener with NodeJS and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmreddy1911/link-shortner"
+  },
+  "author": "Manish Reddy Nandineni",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4",
+    "nanoid": "^3.1.20",
+    "nodemon": "^2.0.6",
+    "valid-url": "^1.0.9"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}

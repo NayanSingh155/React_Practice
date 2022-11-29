@@ -1,0 +1,143 @@
+.nav {
+    height: 60px;
+    width: 100%;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    box-sizing: border-box;
+}
+.nav1 {
+    height: 45px;
+    width: 100%;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.nav > img {
+    height: 80px;
+    width: 150px;
+    margin-top: -10px;
+}
+.nav > #search {
+    width: 400px;
+    height: 40px;
+    margin-top: 6px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+body{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+}
+#search +p{
+    margin-left: 320px;
+    margin-right: 30px;
+
+}
+#search+p+p {
+    margin-right: 30px;
+}
+.nav > span {
+    margin-right: 30px;
+    margin-top: 7px;
+}
+#offer {
+    
+    margin-top: 35px;
+    width: 100%;
+}
+#head {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+}
+#fashion {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#fashion > img {
+    width: 30%;
+}
+#health {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#health > img {
+    width: 30%;
+    height: 400px;
+}
+
+#resell {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+#resell > div > p{
+    margin-left: 100px;
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    line-height: 40px;
+}
+#play , #apple1{
+    margin-left: 160px;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+#img1 {
+    width: 700px;
+    height: 500px;
+}
+#nav2{
+    background: #6441A5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+width: 1000%;
+height: 200px;
+margin-right: -10px;
+margin-top: 60px ;
+display: flex;
+color: rgb(186, 189, 20);
+
+
+
+
+}
+#nav2 > div {
+    margin-left: 130px;
+    margin-top: 30px;
+   
+}
+.con {
+    font-weight: bold;
+}
+svg {
+    height: 25px;
+    width: 25px;
+    margin-top: 1px;
+}
+#rate {
+    
+    border-radius: 10px;
+    
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #222;
+    }
+    .FAQ_container{
+        display: flex;
+        /* height: 600px;
+        width: 100%; */
+        /* border: 2px solid red; */
+        justify-content: center;
+        margin-bottom: 60px;
+        /* padding-top: 30px; */
+        
+    }
+    #child1{
+               
+                height: 450px;
+                width:800px;
+                font-family:  Open Sans,sans-serif;
+                margin-top: 20px;
+                background-color: #e8e8e8;
+                font-weight: 600;
+                padding-top: 40px;
+                
+
+    }
+  #child2 {
+      
+                height: 450px;
+                width:380px;
+                background-color: black;
+                color: white;
+                margin-top: 20px;
+                padding-top: 30px;
+                
+                
+
+    }
+    #heading{
+        
+        
+        margin-top: 80px;
+        margin-left: 85px;
+        font-size: 34px;
+        font-weight: 500;
+       font-family:  Open Sans,sans-serif;
+       color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+
+    }
+    .links{
+        text-decoration: none;
+        color: rgb(177, 165, 165);
+        line-height: 35px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 18px;
+        
+    }
+
+    .links:hover{
+        color:white;
+    }
+    #para{
+        font-size: 36px;
+        color: #333;
+        font-family: Open Sans,sans-serif;
+        line-height: 50px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+    #para2{
+        font-family: Arial, Helvetica, sans-serif;
+        /* padding-top: -10px; */
+        margin-left: 50px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    #bullet{
+        margin-left: 80px;
+        line-height: 35px;
+       
+    }
+    .links1{
+        color: #dd625e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
+    #site{
+        margin-left: 20px;
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    @media all and (max-width:768px) and (min-width:381px){
+       #heading {
+           /* color: #dd625e; */
+           margin-left:40px;
+       }
+       .FAQ_container{
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content: center;
+        /* margin-left: 25px; */
+
+    }
+    #child2 {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #child1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    }
+    @media all and (max-width:388px) and (min-width:50px){
+       #heading {
+           /* color: #dd625e; */
+           margin-left:30px;
+       }
+       .FAQ_container{
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content: center;
+        /* margin-left: 25px; */
+
+    }
+    #child2 {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #child1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    }
+    
+    
+
+</style>
+<body>
+    <header class="header"></header>
+    <div id="heading"> FAQ</div>
+    <div class="FAQ_container">
+    <div id="child1">
+        <p id="para">Welcome to Frequently Asked  <br>Questions</p>
+        <p id="para2">Pick a site area from the navigation, or find a common question below.</p>
+        <ul id="bullet" >
+            <li  >   <a class="links1" href="https://frontendmasters.com/faq/courses/#how-often-do-you-update-your-courses"> How often do you update your courses?</a>    </li > 
+            <li >  <a  class="links1" href="https://frontendmasters.com/faq/learning-paths/#do-you-offer-certificates-of-completion">Do you offer certificates of completion? </a></li > 
+            <li >  <a class="links1" href="https://frontendmasters.com/faq/join/#do-you-offer-a-free-trial">Do you offer a free trial?  </a></li > 
+            <li >  <a class="links1" href="https://frontendmasters.com/faq/my-account/#how-do-i-cancel-my-plan"> How do I cancel my plan?            </a></li > 
+            <li> <a class="links1" href="https://frontendmasters.com/faq/students/#do-you-offer-a-student-discount">Do you offer a student discount?            </a></li>
+            <li> <a  class="links1" href="https://frontendmasters.com/faq/teams/#how-do-your-team-plans-work">How do your team plans work? </a></li>
+
+        </ul>
+    </div>
+    <div id="child2">
+         <h3 id="site">Site Area</h3>
+        <a class="links"href="https://frontendmasters.com/faq/courses/">Cources</a><br>
+        <a class="links"href="https://frontendmasters.com/faq/learning-paths/">Learning Paths</a><br>
+        <a class="links"href="https://frontendmasters.com/faq/join/">Join</a><br>
+        <a class="links"href="https://frontendmasters.com/faq/my-account/">My Account</a><br>
+        <a class="links"href="https://frontendmasters.com/faq/students/">Students</a><br>
+        <a class="links"href="https://frontendmasters.com/faq/teams/">Teams</a>
+
+    </div>
+
+
+</div>
+<div id="footer"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+   //  console.log(navbar)
+    document.querySelector(".header").innerHTML=navbar()
+    import footer from "./components/footer.js"
+
+document.querySelector("#footer").innerHTML=footer()
+const hamburger = document.querySelector(".menu");
+  const navMenu = document.querySelector(".mobile");
+  hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+  const hamburger1  = document.querySelector(" #footer .menu");
+  const navMenu1 = document.querySelector("#footer .mobile");
+  hamburger1.addEventListener("click", function () {
+    navMenu1.classList.toggle("active");
+  });
+
+</script>
+<script src="https://kit.fontawesome.com/2ab2a134b6.js" crossorigin="anonymous"></script>
+

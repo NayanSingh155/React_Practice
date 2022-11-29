@@ -1,0 +1,11 @@
+.btn{
+    border-radius: 45%;
+    width: 120px;
+    height: 40px;
+}
+.App{
+    width: 50%;
+    display:grid;
+    grid-template-columns: 25% 25%;
+    gap: 3%;
+}

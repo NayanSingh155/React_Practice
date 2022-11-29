@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body>
+    <!--DO NOT CHANGE THIS ID's-->
+
+    <div id="container">
+      <div id="sidebar">
+        <!--add your sidebar component here-->
+
+      </div>
+
+      <div id="main">
+        <!--DO NOT CHANGE THIS ID's-->
+        <!--Show the clicked article in detailed format here ONLY-->
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module">
+  import sidebar from "./components/sidebar.js"
+  document.getElementById("sidebar").innerHTML=sidebar()
+  let main = document.getElementById("main")
+  let data = JSON.parse(localStorage.getItem("article"))
+import {appendArticles} from "./scripts/main.js"
+  appendArticles(data,main)
+  let input=document.getElementById("searchbar")
+  input.addEventListener("keypress",function(){
+    go(event)
+  })
+  function go(e){
+  //  console.log(input.value)
+  if(input.value=="explained" && e.code=="Enter"){
+    localStorage.setItem("search_term","explained")
+    window.location.href="search.html"
+  }
+ }
+  </script>

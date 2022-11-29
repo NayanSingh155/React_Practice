@@ -1,0 +1,48 @@
+#log {
+    height: 250px;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    
+}
+h1{
+    padding-top: 30px;
+}
+input {
+    
+    color: white;
+    margin-bottom: 10px;
+}
+
+#form > input:last-child{
+    margin-top: 15px;
+    background-color: rgb(231, 26, 88);
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+
+}
+#box1 {
+    display: flex;
+}
+div {
+    margin: auto;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 500px;
+}
+p{
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 30px;
+}

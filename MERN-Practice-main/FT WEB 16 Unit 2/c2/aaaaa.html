@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/nav.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+  
+    <div id="container">
+<img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.50.94" id="logo" title="Zee5logo" alt="Zee% lOgo" >
+<ul>
+    <li>
+        <a href="#">
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="#">TV Shows</a>
+      
+    </li>
+    <li>
+        <a href="#">Movies</a>
+    </li>
+    <li>
+        <a href="#">Web Series</a>
+    </li>
+    <li>
+        <a href="#">News</a>
+    </li>
+    <li id="menu">
+        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i></a>
+   <ul>
+       <li><a href="#" title="Zee5 Premium Package Subscription">Premium</a></li>
+<li><a href="#" title="Watch Live Tv Channels Online">Live TV</a></li>
+<li><a href="#" title="Watch Music Videos Online">Music</a></li>   
+   <li><a href="#" title="Rent & Watch Movies on ZEEFEX">ZEEFLEX</a></li>
+<li><a href="#" title="Play Games Online">Play</a></li>
+<li><a href="#" title="Articles">Articles</a></li>
+<li><a href="#" title="Digital Learning Platform for Class 6 to 12.NEET,JEE Exams">Learning</a></li>
+   <li><a href="#" title="Watch Kids Shows, Cartoons,Movies & Videos Online">Kids</a></li>
+<li><a href="#" title="Watch Official Fims Videos">Videos</a></li>
+<li><a href="#" title="Stories">Stories</a></li>
+<li><a href="#">Channels</a></li>
+</ul>
+   
+   
+   
+   
+    </li>
+</ul>
+    </div>
+    <div id="box2">
+<ul>
+    <li>
+        <a href="#"><i  class="fa-solid fa-magnifying-glass"></i> <span>Search</span>
+        </a>
+    </li>
+   
+    <li>
+        <a href="Login.html">
+            <button  id="log">LOGIN</button>
+        </a>
+    </li>
+    <li>
+        <a href="Buyplan1.html" >
+            <button id="buy"><i class="fa-solid fa-crown"></i> BUY PLAN</button>
+        </a>
+    </li>
+    <li>
+        <a href="#" id="menu11">
+            <i title="Menu" class="fa-solid fa-bars"></i>
+        </a>
+       
+    </li>
+</ul>
+        </div>
+
+</div>
+     <div id="menu1">
+    <div id="submenu1">
+      <a href="index.html">  Home</a>
+    </div>
+    <div class="line2"></div>
+   <div class="option">
+    <p>Explore</p> <select name="Explore" id="select1"></select>
+   </div>
+   <ul id="submenu2">
+    <li><a href="#" title="Zee5 Premium Package Subscription">Premium</a></li>
+<li><a href="#" title="Watch Live Tv Channels Online">Live TV</a></li>
+<li><a href="#" title="Watch Music Videos Online">Music</a></li>   
+<li><a href="#" title="Rent & Watch Movies on ZEEFEX">ZEEFLEX</a></li>
+<li><a href="#" title="Play Games Online">Play</a></li>
+<li><a href="#" title="Articles">Articles</a></li>
+<li><a href="#" title="Digital Learning Platform for Class 6 to 12.NEET,JEE Exams">Learning</a></li>
+<li><a href="#" title="Watch Kids Shows, Cartoons,Movies & Videos Online">Kids</a></li>
+<li><a href="#" title="Watch Official Fims Videos">Videos</a></li>
+<li><a href="#" title="Stories">Stories</a></li>
+<li><a href="#">Channels</a></li>
+</ul>
+<div class="line2"></div>
+<div class="option">
+    <p>Plans</p> <select name="" id="select2"></select>
+   </div>
+   <ul id="submenu3">
+       <li><a href="#">Buy Plans</a></li>
+       <li><a href="#">HAve a Prepaid Code?</a></li>
+   </ul>
+   <div class="line2"></div>
+<div class="option">
+    <p >Setting</p> <select name=""" id="select4"></select>
+   </div>
+   <ul id="submenu4">
+       <li><a href="#" >Reser  to default</a></li>
+      
+   </ul>
+   
+<div class="line2"></div>
+<div class="option">
+    <p>Info</p> <select name="" id="select5"></select>
+   </div>
+   <ul id="submenu5">
+       <li><a href="#">About Us</a></li>
+       <li><a href="#">Help Center</a></li>
+       <li><a href="#">Grievance Redressal</a></li>
+       <li><a href="#">Terms of use</a></li>
+       <li><a href="#">Privacy Policy</a></li>
+
+   </ul>
+   
+</div>
+   
+</body>
+</html>
+<script>
+    document.querySelector("#select1").addEventListener("click",function(){
+        var a= document.querySelector("#submenu2");
+        if(a.style.display=="none"){
+            a.style.display="block";
+
+        }
+        else{
+            a.style.display="none";
+
+        }
+    })
+    document.querySelector("#select2").addEventListener("click",function(){
+        var b= document.querySelector("#submenu3");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+    document.querySelector("#select4").addEventListener("click",function(){
+        var b= document.querySelector("#submenu4");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+   
+     document.querySelector("#select5").addEventListener("click",function(){
+        var b= document.querySelector("#submenu5");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+    document.querySelector("#menu11").addEventListener("click",function(){
+        var b= document.querySelector("#menu1");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+
+        
+    })
+</script>

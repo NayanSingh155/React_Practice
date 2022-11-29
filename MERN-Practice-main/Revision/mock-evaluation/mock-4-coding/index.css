@@ -1,0 +1,89 @@
+.container {
+    width: 70%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container>div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.container>div:hover {
+    border: 1px solid black;
+}
+
+.container img {
+    width: 50px;
+    height: 50px;
+}
+
+.container>div>div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container>div>div>div {
+    display: flex;
+
+    gap: 15px;
+    align-items: center;
+}
+
+.container>div>div>div img {
+    height: 30px;
+    width: 40px;
+}
+
+.container>div>div:last-child {
+    justify-content: space-between;
+}
+
+.btn1,
+.btn2 {
+
+    padding: 10px 20px;
+    background-color: rgb(130, 56, 56);
+    color: white;
+    margin: 20px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover {
+    background-color: white;
+    color: rgb(130, 56, 56);
+
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+@media all and (min-width:391px) and (max-width:821px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+}
+
+@media all and (min-width:51px) and (max-width:391px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .btn {
+        width: 60%;
+        margin: auto;
+    }
+}

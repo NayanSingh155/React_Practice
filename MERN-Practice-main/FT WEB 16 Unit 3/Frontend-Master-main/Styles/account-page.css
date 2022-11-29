@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: Open Sans, sans-serif;
+}
+
+.account-container {
+  width: 100%;
+  background-color: #222222;
+  color: #fff;
+}
+
+.account-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.account-wrap h1 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.my-account {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.account-nav {
+  background-color: #333333;
+  width: 200px;
+}
+.account-nav ul {
+  list-style: none;
+}
+.account-nav ul li {
+  color: #dd625e;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.account-nav ul li.active {
+  background-color: #111111;
+}
+.account-nav ul li:hover {
+  color: #e58480;
+}
+
+.account-body {
+  padding: 30px;
+  background-color: #111111;
+  flex: 1;
+}
+.settings {
+  display: none;
+}
+.settings.active {
+  display: block;
+}
+.settings h2 {
+  margin: 20px 0;
+}
+.settteings form {
+  margin-bottom: 50px;
+}
+.vertical-margin {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.vertical-margin label {
+  margin-bottom: 5px;
+}
+
+.vertical-margin input,
+.vertical-margin select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  color: #222;
+  display: block;
+  font-family: inherit;
+  padding: 8px 10px;
+  font-size: 17px;
+  width: 100%;
+}
+.vertical-margin select {
+  width: 56%;
+}
+.vertical-margin input:focus {
+  border-color: #e66225;
+  outline: 0;
+}
+
+.horizontal {
+  display: flex;
+}
+.horizontal > div {
+  width: 50%;
+}
+.horizontal > div:first-child {
+  margin-right: 41px;
+}
+.submit-container input[type="submit"] {
+  font-size: 19px;
+  padding: 20px 30px;
+  background: #c02d28;
+  border: none;
+  box-shadow: none;
+  max-width: 190px;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+  transition: background 0.2s ease;
+  margin-top: 30px;
+}
+.submit-container input[type="submit"]:hover {
+  background: #d43530;
+}
+
+.subscriptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.sub-box {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  border-top: 8px solid #3e3e3e;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 40px;
+  background-color: #111111;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sub-box:hover {
+  background-color: #1a1a1a;
+}
+
+.sub-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sub-price {
+  background: #d85519;
+  padding: 4px 16px;
+  border-radius: 4px;
+  position: absolute;
+  right: -32px;
+  top: -4px;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.sub-box.active {
+  transform: scale(1.091);
+  background-color: #90221e;
+  border-top: 8px solid #c02d28;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  color: #222;
+  display: block;
+  font-family: inherit;
+  padding: 20px 10px;
+  font-size: 17px;
+  width: 54%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  border-color: #e66225;
+  outline: 0;
+}
+
+.card #card_number {
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  border: none;
+  outline: none;
+}
+.card #expiry {
+  position: absolute;
+  top: 10px;
+  right: 57px;
+  width: 10%;
+  border: none;
+  outline: none;
+}
+.card #cvc {
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  top: 10px;
+  border: none;
+  outline: none;
+}
+.alert-msg {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #8a8a8a;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 5px 10px;
+  border-color: #e66225;
+  color: #e66225;
+  display: none;
+}
+.alert-msg.active-alert {
+  display: block;
+}

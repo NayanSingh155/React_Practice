@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>I am h1</h1> -->
+    <!-- <h2>I am h2</h2>
+    <h6>I am h6</h6>
+    <p>I am para</p>
+    <div>I am div</div>
+    <img
+      src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg"
+      alt=""
+    />
+    <a href="https://www.masaischool.com/">Masai</a>
+    <button>Submit</button>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table> -->
+  </body>
+</html>
+
+<script>
+  //1.create h1 tag
+  var head1 = document.createElement("h1");
+  //2.give innerText
+  head1.innerText = "I am h1";
+  //3.append it to the body
+
+  var head2 = document.createElement("h2");
+  head2.innerText = "I am h2";
+
+  // create paragraph
+
+  var para = document.createElement("p");
+  para.innerText = "I am paragraph";
+
+  var box = document.createElement("div");
+  box.innerText = " I am div";
+
+  var btn = document.createElement("button");
+  btn.innerText = "Submit";
+
+  document.querySelector("body").append(head2, head1, para, box, btn);
+</script>

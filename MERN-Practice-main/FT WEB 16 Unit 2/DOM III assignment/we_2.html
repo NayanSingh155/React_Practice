@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-family: serif;
+            text-align: center;
+        }
+        #box{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 400px;
+            gap: 10px;
+        }
+        #logo1 {
+            height: 50px;
+            width: 100px;
+            justify-content: center;
+        }
+        #line {
+            line-height: 5px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2 id="font">
+        Strategic Investors
+    </h2>
+    <div id="box">
+       
+    </div>
+</body>
+</html>
+<script>
+    var investors=[
+        {
+            name:"Vijay Shekhar Sharma",
+            role:"Founder & CEO",
+            image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+            companylogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+
+        },
+        {
+            name:"Kunal Shah",
+            role:"Founder ",
+            image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+            companylogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png",
+
+        },
+        {
+            name:"Amrish Rau",
+            role:" CEO",
+            image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+            companylogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png",
+
+        },
+        
+        {
+            name:"Sampad Swain",
+            role:"Co-Founder & CEO",
+            image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+            companylogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png",
+
+        },
+        
+
+    ]
+    investors.map(function (elem,index,array){
+        var box=document.createElement("div");
+        
+        var img1= document.createElement("img");
+        box.setAttribute("id","line");
+
+        img1.setAttribute("src",elem.image);
+        var name1=document.createElement("h3");
+        name1.innerText=elem.name;
+        var para=document.createElement("p");
+        para.innerText=elem.role;
+
+        var clogo=document.createElement("img");
+        clogo.setAttribute("src",elem.companylogo);
+        clogo.setAttribute("id","logo1");
+
+        box.append(img1,name1,para,clogo);
+        document.querySelector("#box").append(box);
+    });
+</script>

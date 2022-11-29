@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin:30px auto;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.card {
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 270px;
+    padding-top: 10px;
+
+}
+
+.card>img {
+    height: 250px;
+
+}
+
+.card>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card>div div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.star {
+    color: gold;
+    font-size: 22px;
+}
+
+.fork {
+    color: rgb(26, 95, 255);
+    font-size: 22px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+}
+.pagination{
+    display: flex;
+    gap: 10px;
+    margin: 30px auto;
+    width: 40%;
+}

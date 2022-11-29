@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: flex;
+        border: 1px solid red;
+        padding: 40px;
+      }
+
+      #container > div {
+        background-color: teal;
+        margin: 10px;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // forms are only for input tags
+  var boxes = document.querySelectorAll("#container>div");
+  console.log(boxes);
+
+  //   boxes[0].addEventListener("click",someFun)
+  //   boxes[0].addEventListener("click",someFun)
+  //   boxes[0].addEventListener("click",someFun)
+  //   boxes[0].addEventListener("click",someFun)
+  //   boxes[0].addEventListener("click",someFun)
+  //   boxes[0].addEventListener("click",someFun)
+
+  for (var i = 0; i < boxes.length; i++) {
+    boxes[i].addEventListener("click", changeColor);
+  }
+
+  function changeColor(event) {
+    console.log(event.target.nextElementSibling);
+    //event.target.style.background = "orange";
+    event.target.previousElementSibling.style.background = "red";
+  }
+</script>

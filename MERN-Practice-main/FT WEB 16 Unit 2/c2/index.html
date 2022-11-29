@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #box {
+            height: 60px;
+            top:0;
+            left: 0;
+            max-width:100%;
+            width: 100%;
+            margin:auto;
+            padding: 20px 20px;
+            position: fixed;
+            background-color: #0f0617;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+          
+        }
+        body {
+        font-family: NotoSansRegular,sans-serif;
+        background-color: #0f0617;
+        font-weight: 400;
+        }
+        #box ul {
+            list-style-type: none;
+            display: flex;
+        }
+        #logo {
+        height: 45px;
+       margin-left: -50px;
+        margin-top: -15px;
+    }
+    #box ul li a {
+        text-decoration: none;
+        color: hsla(0,0%,100%,.9);
+        position: relative;
+    }
+    #box ul li {
+        width: max-content;
+        margin-left: 30px;
+        margin-top:-5px;
+        text-align: center;
+    }
+    #menu {
+        position: relative;
+        margin-top: 3px;
+    }
+    #menu ul {
+        margin-top: 15px;
+        margin-left: -100px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+    }
+   
+
+    ul li  ul li {
+        width: max-content;
+        margin-left: 20px;
+        margin-top:-5px;
+        text-align: center;
+    }
+      ul li ul li {
+        display: none;
+    }   
+    ul li span {
+        display: none;
+        font-size: 13px;
+       border: 1px solid #fff;
+        color: #fff;
+        width: 60px;
+    }
+    ul li:hover span {
+        display: block;
+    }
+    li a::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+    }
+    li a:hover:after{
+        color: #ffffff;
+        width: 100%;
+        transition: width 0.3s ease-in-out;
+    }
+      
+    #buy {
+        color: #fff;
+        cursor: pointer;
+        background-color: #8230c6;
+        border-radius: 6px;
+        font-size: 13px;
+        height: 25px;
+        margin-top: -5px;
+        }
+        #log {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 20px;
+       }
+       #log:hover{
+        background-color: #fff;
+        color: #0f0617;
+    }
+    #buy:hover{
+        background-color: #6d1bb1;
+    }
+    ul li:hover ul li {
+        display:block;
+    }
+    
+    #menu ul li {
+        background-color: black;
+        width: 200px;
+        text-align: left;
+        height: 50px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        padding-left: 30px;
+    }
+
+    #menu1 {
+        width: 380px;
+        background-color:black;
+         height: 1350px;
+     border-radius: 10px;
+      margin: auto;
+        margin-top: 80px;
+        padding: 15px;
+        display: none;
+        overflow: hidden;
+    }
+    #submenu1 {
+    
+        background-color:#0f0617;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 16px;
+        height: 50px;
+        width: 370px;
+        margin: auto;
+    box-sizing: border-box;
+        
+    
+    
+    }
+    #menu1 a {
+        text-decoration:none ;
+        color: #fff;
+    }
+    .line2 {
+    width: 100%;
+    height: 0.1px;
+    background: #6d1bb1;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    }
+    .option {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .option > p {
+        color: #8230c6;
+        margin-top: 0px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    select {
+        background-color: transparent;
+        color: #fff;
+        border: 1 px solid black;
+        height: 20px;
+        margin-right: 20px;
+    }
+    select option {
+        color: #fff;
+    }
+    #menu1 ul {
+        margin-top: 0px;
+       margin-left: 0px;
+        padding: 5px;
+        display: none;
+        
+    }
+    
+    #menu1 ul li {
+        background-color: black;
+        width: 200px;
+        text-align: left;
+        height: 50px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        
+    }
+    #line2 + p{
+        color: #8230c6;
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #menu11 {
+        margin-right: 10px;
+    }
+    @media all and (min-width:381px) and (max-width:900px){
+        #box1 ul li:nth-child(2){
+            display: none;
+        }
+        #box1 ul li:nth-child(3){
+            display: none;
+        }
+        #box1 ul li:nth-child(4){
+            display: none;
+        }
+        #box1 ul li:nth-child(5){
+            display: none;
+        }
+        #box1 ul li:nth-child(6){
+            display: none;
+        }
+        #box1 ul li:nth-child(7){
+            display: none;
+        }
+        #submenu1 {
+            width: 300px;
+        }
+
+    }
+    @media all and (min-width:50px) and (max-width:380px){
+        #box1 ul li:nth-child(2){
+            display: none;
+        }
+        #box1 ul li:nth-child(3){
+            display: none;
+        }
+        #box1 ul li:nth-child(4){
+            display: none;
+        }
+        #box1 ul li:nth-child(5){
+            display: none;
+        }
+        #box1 ul li:nth-child(6){
+            display: none;
+        }
+        #box1 ul li:nth-child(7){
+            display: none;
+        }
+        #box2 ul li:nth-child(2){
+            display: none;
+        }
+        #box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #menu1 {
+            width: 250px;
+        }
+        #submenu1 {
+            width: 200px;
+        }
+
+    }
+    </style>
+</head>
+<body>
+<navbar>
+    <div id="box">
+         <div id="box1" >
+              <ul>
+                  <li>
+                    <img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.50.94" id="logo" title="Zee5logo" alt="Zee% lOgo" >
+
+                  </li>
+                  <li>
+                      <a href="#">Home</a>
+
+                  </li>
+                  <li>
+                      <a href="#">TV Shows</a>
+
+                  </li>
+                  <li>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <a href="#">Web Series</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                
+                 <li id="menu">
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                          <ul>
+                             <li><a href="#" title="Zee5 Premium Package Subscription">Premium</a></li>
+                             <li><a href="#" title="Watch Live Tv Channels Online">Live TV</a></li>
+                             <li><a href="#" title="Watch Music Videos Online">Music</a></li>   
+                             <li><a href="#" title="Rent & Watch Movies on ZEEFEX">ZEEFLEX</a></li>
+                             <li><a href="#" title="Play Games Online">Play</a></li>
+                             <li><a href="#" title="Articles">Articles</a></li>
+                             <li><a href="#" title="Digital Learning Platform for Class 6 to 12.NEET,JEE Exams">Learning</a></li>
+                             <li><a href="#" title="Watch Kids Shows, Cartoons,Movies & Videos Online">Kids</a></li>
+                             <li><a href="#" title="Watch Official Fims Videos">Videos</a></li>
+                             <li><a href="#" title="Stories">Stories</a></li>
+                             <li><a href="#">Channels</a></li>
+                          </ul>
+
+                     </li>
+              </ul>
+         </div>
+         <div id="box2">
+             <ul>
+                <li style="margin-top:-1px;height: 25px;">
+                    <a href="#"><i  class="fa-solid fa-magnifying-glass"></i> <span>Search</span></a>
+                </li>
+               
+                 <li>
+                    <a href="Login.html">
+                        <button  id="log">LOGIN</button></a>
+                 </li>
+                 <li>
+                    <a href="Buyplan1.html" >
+                        <button id="buy"><i class="fa-solid fa-crown"></i> BUY PLAN</button></a>
+                 </li>
+                  <li id="menu11">
+                    <a href="#" >
+                        <i title="Menu" class="fa-solid fa-bars"></i></a>
+                         
+                           
+                          </li>
+                    </ul>
+
+             </div>
+    </div>
+    <div id="menu1">
+        <div id="submenu1">
+          <a href="index.html">  Home</a>
+        </div>
+        <div class="line2"></div>
+       <div class="option">
+        <p>Explore</p> <select name="Explore" id="select1"></select>
+       </div>
+       <ul id="submenu2">
+        <li><a href="#" title="Zee5 Premium Package Subscription">Premium</a></li>
+    <li><a href="#" title="Watch Live Tv Channels Online">Live TV</a></li>
+    <li><a href="#" title="Watch Music Videos Online">Music</a></li>   
+    <li><a href="#" title="Rent & Watch Movies on ZEEFEX">ZEEFLEX</a></li>
+    <li><a href="#" title="Play Games Online">Play</a></li>
+    <li><a href="#" title="Articles">Articles</a></li>
+    <li><a href="#" title="Digital Learning Platform for Class 6 to 12.NEET,JEE Exams">Learning</a></li>
+    <li><a href="#" title="Watch Kids Shows, Cartoons,Movies & Videos Online">Kids</a></li>
+    <li><a href="#" title="Watch Official Fims Videos">Videos</a></li>
+    <li><a href="#" title="Stories">Stories</a></li>
+    <li><a href="#">Channels</a></li>
+    </ul>
+    <div class="line2"></div>
+    <div class="option">
+        <p>Plans</p> <select name="" id="select2"></select>
+       </div>
+       <ul id="submenu3">
+           <li><a href="#">Buy Plans</a></li>
+           <li><a href="#">HAve a Prepaid Code?</a></li>
+       </ul>
+       <div class="line2"></div>
+    <div class="option">
+        <p >Setting</p> <select name=""" id="select4"></select>
+       </div>
+       <ul id="submenu4">
+           <li><a href="#" >Reser  to default</a></li>
+          
+       </ul>
+       
+    <div class="line2"></div>
+    <div class="option">
+        <p>Info</p> <select name="" id="select5"></select>
+       </div>
+       <ul id="submenu5">
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Help Center</a></li>
+           <li><a href="#">Grievance Redressal</a></li>
+           <li><a href="#">Terms of use</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+    
+       </ul>
+       
+    </div>
+</navbar>
+   
+
+</body>
+</html>
+<script>
+ 
+ document.querySelector("#select1").addEventListener("click",function(){
+        var a= document.querySelector("#submenu2");
+        if(a.style.display=="none"){
+            a.style.display="block";
+
+        }
+        else{
+            a.style.display="none";
+
+        }
+    })
+    document.querySelector("#select2").addEventListener("click",function(){
+        var b= document.querySelector("#submenu3");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+    document.querySelector("#select4").addEventListener("click",function(){
+        var b= document.querySelector("#submenu4");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+   
+     document.querySelector("#select5").addEventListener("click",function(){
+        var b= document.querySelector("#submenu5");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+    })
+    document.querySelector("#menu11").addEventListener("click",function(){
+        var b= document.querySelector("#menu1");
+         if(b.style.display=="none"){
+            b.style.display="block";
+
+        }
+        else{
+            b.style.display="none";
+
+        }
+
+        
+    })
+</script>

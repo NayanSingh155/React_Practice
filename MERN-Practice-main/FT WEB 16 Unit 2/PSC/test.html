@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #report {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #report td,
+      #report th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #report tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #report tr:hover {
+        background-color: #ddd;
+      }
+
+      #report th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+      form {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <input id="name" type="text" placeholder="Enter student name" />
+      <input id="maths" type="number" placeholder="Enter maths marks" />
+      <input id="science" type="number" placeholder="Enter science marks" />
+      <input id="eng" type="number" placeholder="Enter english marks" />
+      <input type="submit" />
+    </form>
+    <table id="report">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Maths</th>
+          <th>Science</th>
+          <th>English</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
+
+<script>
+  var students = [
+    { name: "Anand", maths: 90, science: 90, english: 90 },
+    { name: "Pragati", maths: 70, science: 70, english: 70 },
+    { name: "Vibhav", maths: 80, science: 80, english: 80 },
+  ];
+
+  document
+    .querySelector("#myForm")
+    .addEventListener("submit", generateReportCard);
+
+  function generateReportCard(event) {
+    event.preventDefault();
+    var name = document.querySelector("#name").value;
+    var maths = document.querySelector("#maths").value;
+    var science = document.querySelector("#science").value;
+    var english = document.querySelector("#eng").value;
+    var studentObj = {
+      name: name,
+      maths: maths,
+      science: science,
+      english: english,
+    };
+    //console.log(studentObj);
+    students.push(studentObj);
+    console.log(students);
+  }
+
+  
+  students.map(function (elem) {
+    var row = document.createElement("tr");
+    var col1 = document.createElement("td");
+    col1.innerText = elem.name;
+    var col2 = document.createElement("td");
+    col2.innerText = elem.maths;
+    var col3 = document.createElement("td");
+    col3.innerText = elem.science;
+    var col4 = document.createElement("td");
+    col4.innerText = elem.english;
+    var total = elem.maths + elem.science + elem.english;
+    var col5 = document.createElement("td");
+    col5.innerText = total;
+    row.append(col1, col2, col3, col4, col5);
+    document.querySelector("tbody").append(row);
+  });
+</script>

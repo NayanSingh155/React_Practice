@@ -1,0 +1,29 @@
+#log {
+    height:250px;
+    width: 300px;
+    background-color: pink;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px teal;
+    margin-top: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    
+    
+}
+h1{
+    padding-top: 30px;
+}
+input {
+    background-color: black;;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#form > input:last-child{
+    margin-top: 30px;
+}
+body {
+    background: black;
+}
+

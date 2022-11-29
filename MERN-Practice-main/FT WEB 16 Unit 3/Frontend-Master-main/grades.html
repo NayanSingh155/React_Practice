@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<style>
+    body{
+        background-color: #222;
+    }
+    #guide{
+        /* height:1050px; */
+        width:100%;
+        /* border:2px solid red; */
+        background-color: #222;
+        margin-bottom: 20px;
+    }
+    #name{
+        /* height:50px; */
+        width:400px;
+        /* border:2px solid blue; */
+        color: white;
+        padding-top: 35px;
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 80px;
+        color: #e6e6e6;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    #image{
+        display:grid;
+        grid-template-columns: repeat(4 ,1fr);
+         gap:30px;
+         grid-template-rows: auto;
+        /* border:2px solid yellow; */
+        /* height: 900px; */
+        width: 90%;
+        /* margin-left: 80px; */
+        margin: auto;
+        margin-top: 20px;
+        
+        
+    }
+    #image>div{
+        
+        /* width:250px; */
+        /* height: 100%; */
+        /* border:2px solid red; */
+    
+        padding-bottom: 20px;
+        padding-left: 15px;
+        background-color: black;
+        
+    }
+    #image img{
+        height:300px;
+        width:100%;
+        margin-left: -10px;
+        
+    }
+    #link{
+        color:#c02d28;
+        line-height: 35px;
+        margin-top: 10px;
+    }
+
+   #image  a{
+         text-decoration: underline;
+         color: orange;
+         /* margin-left: 10px; */
+     }
+     @media all and (max-width:768px) and (min-width:381px){
+      
+     #image {
+        grid-template-columns: repeat(2 ,1fr);
+     }
+     #name {
+         margin-left: 45px;
+     }
+     }
+     @media all and (min-width: 50px) and (max-width: 380px) {
+        #image {
+        grid-template-columns: repeat(1 ,1fr);
+        margin-top: -10px;
+     }
+     #name {
+         margin-left: 25px;
+         height:50px;
+        width:250px;
+        font-size: 20px;
+     }
+     }
+</style>
+<body>
+    <header class="header"></header>
+    <div id="guide">
+        <div id="name">Frontend Masters Books</div>
+        <div id="image">
+            <div id="image1"  ><img class="im" src="https://frontendmasters.com/static-assets/guides/learning-roadmap.jpg" alt=""><a id="link" href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image2" ><img id="im" src="https://frontendmasters.com/static-assets/guides/javascript-enlightenment.jpg" alt=""><a id="link" href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image3"><img id="im" src="https://frontendmasters.com/static-assets/guides/front-end-handbook-2019.jpg" alt=""><a  id="link" href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image4" ><img id="im" src="https://frontendmasters.com/static-assets/guides/front-end-handbook-2018.jpg" alt=""><a id="link" href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image5"><img id="im" src="https://frontendmasters.com/static-assets/guides/front-end-handbook-2017.jpg" alt=""><a  id="link"href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image6" ><img id="im" src="https://frontendmasters.com/static-assets/guides/front-end-handbook-2016.jpg" alt=""><a id="link" href="">Read Online > <br>Github Repo ></a></div>
+            <div id="image7"><img id="im" src="https://frontendmasters.com/static-assets/guides/react-enlightenment.jpg" alt=""><a id="link" href="">Read Online > <br>Github Repo ></a></div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+   //  console.log(navbar)
+    document.querySelector(".header").innerHTML=navbar()
+    import footer from "./components/footer.js"
+
+document.querySelector("#footer").innerHTML=footer()
+const hamburger = document.querySelector(".menu");
+  const navMenu = document.querySelector(".mobile");
+  hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+  const hamburger1  = document.querySelector(" #footer .menu");
+  const navMenu1 = document.querySelector("#footer .mobile");
+  hamburger1.addEventListener("click", function () {
+    navMenu1.classList.toggle("active");
+  });
+
+</script>
+<script src="https://kit.fontawesome.com/2ab2a134b6.js" crossorigin="anonymous"></script>

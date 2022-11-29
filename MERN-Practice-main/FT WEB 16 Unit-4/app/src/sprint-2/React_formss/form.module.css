@@ -1,0 +1,21 @@
+.box label{
+text-align: left;
+margin-left: 20px;
+}
+.box {
+text-align: left;
+margin: auto;
+width: 20%;
+
+/* border: 1px solid black; */
+
+}
+.box h1 {
+    text-align: center;
+}
+.box input,.box select {
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}

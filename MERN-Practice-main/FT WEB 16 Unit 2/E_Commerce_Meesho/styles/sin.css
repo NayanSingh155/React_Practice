@@ -1,0 +1,69 @@
+#sin {
+    height: 350px;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+
+
+}
+
+h1{
+    padding-top: 30px;
+}
+input {
+    
+    color: black;
+    margin-bottom: 10px;
+}
+#form > input:last-child{
+    margin-top: 15px;
+    background-color: rgb(231, 26, 88);
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+
+}
+h2{
+    text-align: center;
+    color: grey;
+    margin-top: 60px;
+    line-height: 20px;
+   
+}
+#box1 {
+    display: flex;
+    margin-left: 10px;
+
+}
+#box1  img {
+    width: 80%;
+    height: 400px;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+#bo {
+    margin-right: 250px;
+}
+span{
+    font-size: 10px;
+    
+    margin-left: 20px;
+
+}
+p{
+    text-align: center;
+}
+button{
+    margin-left: 100px;
+    background-color: rgb(231, 26, 88);
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+}
+

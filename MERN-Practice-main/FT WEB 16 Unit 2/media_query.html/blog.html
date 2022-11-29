@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+
+        }
+        #box {
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+        }
+#box > div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+border: 1px solid black;
+box-sizing: border-box;
+
+
+}
+img {
+    width: 100%;
+    height: 200px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: -5px;
+    padding-left: 10px;
+}
+p{
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 10px;
+}
+@media all and (min-width:381px) and (max-width:700px){
+            #box {
+            
+            
+            
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 400px 400px; 
+            
+        }
+        }
+        @media all and (min-width:50px) and (max-width:380px){
+            #box {
+            
+            
+            
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(4,400px)
+            
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        OUR BLOG
+    </h1>
+    <div id="box">
+<div>
+    <img src="https://th.bing.com/th/id/OIP.Z9N0UAbAzaW_akBdlersaAHaFi?w=236&h=180&c=7&r=0&o=5&dpr=1.51&pid=1.7">
+
+<h2>
+    Black Friday Guide: Best Sales & Discount Codes
+</h2>
+<p>
+    By Nancy Ward on July 22, 2017
+</p>
+<p>
+    Duis ut velit gravida nibh bibendum commodo. Sus pendisse pellentesque mattis augue id euismod. Inter dum et malesuada fames
+</p>
+
+</div>
+<div>
+    <img src="https://th.bing.com/th?id=OIF.hmT%2b%2fwLT58Bn65wi4F6PkQ&w=249&h=187&c=7&r=0&o=5&dpr=1.51&pid=1.7">
+
+<h2>The White Sneakers Nearly Every Fashion,Girls Own
+    </h2>
+    <p>
+        By Nancy Ward on July 18, 2017
+    </p>
+    <p>
+        Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+    </p>
+
+</div>
+<div>
+<img src="https://i0.wp.com/styledumonde.com/wp-content/uploads/2017/11/Annina-Mislin-by-STYLEDUMONDE-Street-Style-Fashion-Photography_48A2368.jpg?w=1400&ssl=1">
+<h2>
+    New York SS 2018 Street Style: Annina Mislin
+</h2>
+<p>
+    By Nancy Ward on July 2, 2017
+</p>
+<p>
+    Proin nec vehicula lorem, a efficitur ex Nam vehicule nulla vel erat tincidunt, sed hendrerit ligula porttitor, Fusce sit amet maximus nunc
+</p>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    
+    float: right;
+
+}
+#navbar ul li {
+    width: auto;
+    margin-left: 15px;
+   
+}
+#navbar {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+   
+    
+}
+img{
+    height: 250px;
+    width: 100%;
+}
+#menu {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    text-align: center;
+   
+}
+#menu div {
+   
+    padding-bottom: 15px;
+}
+#addtocart {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 3px 6px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#count {
+    margin-top: 17px;
+    margin-left: 20px;
+}

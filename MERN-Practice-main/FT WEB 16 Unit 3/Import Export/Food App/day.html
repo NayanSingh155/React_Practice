@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        #box {
+            margin-top: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="list"></div>
+    <div id="box"></div>
+</body>
+</html>
+<script type="module">
+  
+    let header=document.getElementById("header")
+     import navbar from "./components/nav.js"
+     header.innerHTML=navbar()
+    
+    
+
+</script>
+<script>
+    let get1 = async () => {
+        try{
+            let res = await fetch(`https://themealdb.com/api/json/v1/1/random.php`)
+            let data = await res.json();
+            console.log(data);
+            append1(data.meals);
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+    let append1= (data) => {
+        data.map((el) => {
+            document.getElementById("box").innerHTML="";
+            let img = document.createElement("img");
+            img.src=el.strMealThumb;
+            let p1= document.createElement("h3")
+             p1.innerText =el.strMeal;
+             let p2 = document.createElement("h6");
+             p2.innerText="Ingredients Used"
+             let p3 = document.createElement("p");
+             p3.innerText=el.strIngredient1+", "+el.strIngredient1+", "+el.strIngredient2+", "+el.strIngredient3+", "+el.strIngredient4+", "+el.strIngredient5+", "+el.strIngredient6+", "+el.strIngredient7+", "+el.strIngredient8+", "+el.strIngredient9+", "+el.strIngredient10
+             let p4 = document.createElement("h5");
+             p4.innerText="Category : "+el.strCategory;
+             let a = document.createElement("a");
+             a.href=el.strYoutube;
+             a.innerText="See Recipe Here"
+             let div = document.createElement("div")
+             let div1 = document.createElement("div")
+             div.style.display="flex";
+             div1.append(p1,p4,p2,p3,a)
+             div1.setAttribute("id",'box1')
+             div.append(img,div1);
+             document.getElementById("box").append(div)
+        })
+    }
+    get1()
+    const get = async() => {
+    try {
+        let search = document.getElementById("search").value;
+        let res = await fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${search}`);
+        let data = await res.json();
+        console.log(data)
+        append(data.meals)
+        
+    }
+    catch(err) {
+        console.log(err)
+    }
+  }
+  let list = document.getElementById("list")
+  function append(data){
+         let search = document.getElementById("search").value;
+
+      list.innerHTML=""
+      data.map(function(el){
+        let p = document.createElement("p")
+        p.innerText= el.strMeal;
+        list.append(p)
+        p.addEventListener("click",function(){
+            document.getElementById("box").innerHTML="";
+            let img = document.createElement("img");
+            img.src=el.strMealThumb;
+            let p1= document.createElement("h3")
+             p1.innerText = p.innerText;
+             let p2 = document.createElement("h6");
+             p2.innerText="Ingredients Used"
+             let p3 = document.createElement("p");
+             p3.innerText=el.strIngredient1+", "+el.strIngredient1+", "+el.strIngredient2+", "+el.strIngredient3+", "+el.strIngredient4+", "+el.strIngredient5+", "+el.strIngredient6+", "+el.strIngredient7+", "+el.strIngredient8+", "+el.strIngredient9+", "+el.strIngredient10
+             let p4 = document.createElement("h5");
+             p4.innerText="Category : "+el.strCategory;
+             let a = document.createElement("a");
+             a.href=el.strYoutube;
+             a.innerText="See Recipe Here"
+             let div = document.createElement("div")
+             let div1 = document.createElement("div")
+             div.style.display="flex";
+             div1.append(p1,p4,p2,p3,a)
+             div1.setAttribute("id",'box1')
+             div.append(img,div1);
+             document.getElementById("box").append(div)
+        })
+      })
+      if(search!==""){
+          list.style.display="block"
+      }
+      else{
+        list.style.display="none"
+      }
+      if(data.length>6){
+          list.style.overflowY="scroll"
+      }
+      else{
+        list.style.overflowY="hidden"
+      }
+  }
+   document.onclick=(event) => {
+       if(event.target.id !== search){
+           list.style.display="none"
+       }
+   }
+</script>
+<script src="https://kit.fontawesome.com/2ab2a134b6.js" crossorigin="anonymous"></script>

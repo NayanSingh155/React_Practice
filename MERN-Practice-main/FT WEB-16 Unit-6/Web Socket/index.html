@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web socket</title>
+</head>
+<body>
+    <h1>Welcome to socket</h1>
+    <p id="text"></p>
+    <button id="click">click</button>
+    <script>
+        const ws=new WebSocket("ws://localhost:3000");
+        ws.onmessage=(msg)=>{
+            console.log("server said",msg.data)
+            document.getElementById("text").innerText=msg.data
+        }
+        document.getElementById("click").addEventListener("click",function(){
+            ws.send("hey server")
+        })
+    </script>
+</body>
+</html>

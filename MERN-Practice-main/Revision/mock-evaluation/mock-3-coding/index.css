@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    width: 100%;
+
+    padding: 20px;
+    background-image: url("https://th.bing.com/th/id/R.45a9eeddafb2bf2c689449edf67d9bc7?rik=gGoozbknH45bCA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fM2lRrD1.jpg&ehk=%2bOx8LC9tMKh2f6invp7hbqpcuPdIhwfXO%2fl0lcLeobE%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: 10 center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.banner h3 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.banner>div:first-child {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner>div:last-child {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.banner h1 span {
+    font-style: italic;
+}
+
+.banner button {
+    border-radius: 20px;
+    padding: 9px 25px;
+    text-align: center;
+    margin-right: 20px;
+    align-items: center;
+    font-family: sans-serif;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: rgb(175, 53, 53);
+}
+
+.gallery {
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.gallery h3 {
+    font-weight: 500;
+}
+
+.gallery h1,
+.apt h1 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.gallery>div {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery>div>div:first-child {
+    display: grid;
+    gap: 15px;
+    /* border:1px solid black */
+}
+
+.gallery>div>div:first-child img {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery>div>div>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border:1px solid black; */
+    gap: 15px;
+
+}
+
+.gallery>div>div>div img {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery>div>div:last-child img {
+    width: 100%;
+    height: 415px;
+}
+
+.apt {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.apt>div {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.apt>div>div {
+    width: 25%;
+    text-align: center;
+
+}
+
+.apt>div>img {
+    width: 25%;
+    height: 250px;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    margin: 5px auto;
+    margin-top: 40px;
+    width: 40%;
+}
+
+.apt h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    /* margin-top: -50px; */
+}
+
+.apt h3 {
+    font-size: 12px;
+}
+
+.apt h3 span {
+    color: grey;
+}
+
+.apt button {
+    background-color: transparent;
+    border: 1px solid #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.posts {
+    width: 60%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid img {
+    height: 70px;
+    width: 70px;
+}
+
+.grid>div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.posts h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.posts h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.posts p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.posts p span {
+    font-weight: 400;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tags {
+
+    text-align: center;
+    width: 69%;
+    margin: 30px auto;
+}
+
+.tags h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tags>div {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tags>div>div {
+    background-color: rgb(241, 234, 222);
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+}
+
+@media all and (min-width:392px) and (max-width:769px) {
+    .banner>div:first-child {
+        width: 90%;
+    }
+
+    .banner>div:last-child {
+        width: 90%;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+
+    .gallery>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .apt {
+        width: 90%;
+    }
+
+    .apt>div {
+
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .apt>div>div {
+        width: 45%;
+    }
+    
+
+    .apt>div>img {
+        width: 45%;
+    }
+
+    .posts {
+        width: 90%;
+        gap: 0px;
+        grid-template-columns: 80% 20%;
+    }
+
+}
+
+@media all and (min-width:51px) and (max-width:391px) {
+    .banner>div:first-child {
+        width: 90%;
+    }
+
+    .banner>div:last-child {
+        width: 90%;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+
+    .gallery>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery>div>div>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .apt {
+        width: 90%;
+    }
+
+    .apt>div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .apt>div>div {
+        width: 100%;
+    }
+
+    .apt>div>img {
+        width: 100%;
+    }
+
+    .posts {
+        width: 90%;
+        gap: 30px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .posts h3 {
+        font-size: 12px;
+    }
+
+    .posts p {
+        font-size: 10px;
+    }
+}

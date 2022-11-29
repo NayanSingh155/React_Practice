@@ -1,0 +1,104 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000d0;
+    color: aqua;
+}
+.nav img {
+    height: 40px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 40px;
+}
+.nav a {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav button, .con button {
+    background-color: red;
+    color: aqua;
+    outline: none;
+    border:none;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+.form {
+    /* margin:0 auto; */
+    width: 100%;
+    text-align: left;
+    height: 630px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 50px;
+    /* padding-top: 30px; */
+    background-color: #222;
+    color: aqua;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.form input {
+    width: 300px;
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 10px;
+}
+.form input:last-child {
+    width: 100px;
+    margin-left: 100px;
+    background-color: red;
+    color: aqua;
+    outline: none;
+    border:none;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+.form input:last-child:hover {
+    background-color: chocolate;
+}
+.form form {
+    margin: 30px auto;
+}
+.form p {
+    text-align: center;
+    margin-top: -20px;
+}
+.container {
+    background-color: #222;
+    color:aqua;
+    padding-bottom: 40px;
+}
+.con {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding-top:40px ;
+    padding-bottom: 20px;
+    border-bottom: 1px solid aqua;
+    /* margin-bottom: 15px; */
+}
+.con img {
+    height: 270px;
+    width: 300px;
+}
+.con div {
+    text-align: left;
+    margin-left: 30px;
+}
+.about {
+    background-color: #222;height: 625px;
+    padding-top: 50px;
+    color: aqua;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #registerForm{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h2>Register here</h2>
+            <form id="registerForm">
+                <input type="text" name="name_input" placeholder="John Doe"/>
+                <br/>
+                <input type="email" name="email_input" placeholder="username@example.com"/>
+                <br/>
+                <input type="password" name="password_input" placeholder="John@123"/>
+                <br/>
+                <input type="text" name="username_input" placeholder="John"/>
+                <br/>
+                <input type="number" name="mobile_input" placeholder="9876543210"/>
+                <br/>
+                <textarea name="description_input" placeholder="Whatever you want to write"></textarea>
+                </br>
+                <input type="submit" value="Sign Up"/>
+            </form>
+        </div>
+        <div>
+            <h2>Login here</h2>
+            <form id="loginForm">
+                <input type="text" name="username_input" placeholder="John"/>
+                <br/>
+                <input type="password" name="password_input" placeholder="John@123"/>
+                <br/>
+                <input type="submit" value="Login"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

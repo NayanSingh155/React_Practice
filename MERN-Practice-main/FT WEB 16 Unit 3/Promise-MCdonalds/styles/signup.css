@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body {
+       font-size: 100%;
+        font-family: Proxima Nova Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+        background-color: #fff;
+        color: black;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+#navbar {
+    width: 95%;
+    margin: auto;
+    height: 36px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border:1px solid teal;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: space-between;
+
+   
+}
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+#navbar ul li {
+    width: auto;
+    margin-right: 25px;
+}
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navbar ul li a:hover {
+    border-bottom: 1px solid black;
+    
+
+ } 
+ #signup-form-div {
+    height: 350px;
+    width: 300px;
+    margin:auto;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 70px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+h1{
+    padding-top: 30px;
+    color: brown;
+}
+input {
+    
+    color:black;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+#form > input:last-child{
+    
+    background-color: teal;
+    border-radius: 15px;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 15px;
+
+}
+#logo {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 15px;
+  font-size: 27px;
+  margin-top: -4px;
+  font-weight: bold;
+  font-style: italic;
+}
+a{
+    text-decoration: none;
+}

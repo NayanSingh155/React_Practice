@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+.slider-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #074179;
+  padding: 30px;
+}
+.slider {
+  max-width: 1187px;
+  /* height: 500px; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.s-top {
+  font-size: 27px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.s-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.sli .slides {
+  /* width: 500%; */
+  /* height: 500px; */
+  display: flex;
+}
+/* .slide {
+ 
+} */
+
+.left-btn {
+  margin-right: 30px;
+}
+.right-btn {
+  margin-left: 30px;
+}
+
+#prev,
+#next {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.slides {
+  display: flex;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: repeat(3, 365px);
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+  /* width: 1600px; */
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.slider-box {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 16px;
+}
+
+.slider-box-top {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.slider-box-top .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.slider-box-top .profile-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.user .profile-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+.user .profile-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user .user-name {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.twit-icon {
+  margin-left: auto;
+  color: #1da1f2;
+  font-size: 21px;
+}
+
+.slider-box-mid {
+  line-height: 1.4;
+  font-size: 17px;
+  color: #222;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.slider-box-bottom {
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  padding-top: 10px;
+  color: #8a8a8a;
+}
+
+/* Screen */
+/*  Mid Desktop screens */
+@media only screen and (min-width: 1030px) and (max-width: 1330px) {
+  .slider {
+    max-width: 887px;
+  }
+  .slide {
+    grid-template-columns: repeat(3, 265px);
+  }
+}
+
+/* Tablet Screen */
+@media only screen and (min-width: 770px) and (max-width: 1029px) {
+  .slider {
+    max-width: 576px;
+  }
+  .slide {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 0px) and (max-width: 779px) {
+  .s-top {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .slider-container {
+    padding: 0;
+  }
+  .slider {
+    max-width: 280px;
+  }
+  .slide {
+    grid-template-columns: repeat(1, 230px);
+  }
+
+  .slider-box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 16px;
+  }
+
+  .slider-box-top {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .slider-box-top .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+  }
+  .slider-box-top .profile-img img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .user .profile-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+    letter-spacing: 0.5px;
+  }
+  .user .profile-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .user .user-name {
+    color: #8a8a8a;
+    font-size: 14px;
+  }
+
+  .twit-icon {
+    margin-left: auto;
+    color: #1da1f2;
+    font-size: 21px;
+  }
+
+  .slider-box-mid {
+    line-height: 1.4;
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .slider-box-bottom {
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #8a8a8a;
+  }
+
+  /* Screen */
+  /*  Mid Desktop screens */
+  @media only screen and (min-width: 1030px) and (max-width: 1330px) {
+    .slider {
+      max-width: 887px;
+    }
+    .slide {
+      grid-template-columns: repeat(3, 265px);
+    }
+  }
+
+  /* Tablet Screen */
+  @media only screen and (min-width: 770px) and (max-width: 1029px) {
+    .slider {
+      max-width: 576px;
+    }
+    .slide {
+      grid-template-columns: repeat(2, 260px);
+    }
+  }
+
+  /* Small Screen */
+  @media only screen and (min-width: 0px) and (max-width: 769px) {
+    .s-top {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .slider-container {
+      padding: 0;
+    }
+    .slider {
+      max-width: 280px;
+    }
+    .slide {
+      grid-template-columns: repeat(1, 230px);
+    }
+  }
+}

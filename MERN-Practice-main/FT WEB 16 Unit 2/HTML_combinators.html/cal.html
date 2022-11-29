@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: teal;
+            text-align: center;
+            font-size: 40px;
+        }
+        *{
+            box-sizing: border-box;
+            font-weight: 800;
+                  }
+                  div{
+                      border-radius: 10px;
+                  }
+        #box{
+            width: 25%;
+            margin: 20px auto;
+            padding: 35px 25px;
+            border:1px solid black
+        }
+        #box1{
+            height: 40px;
+            width: 90%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+        }
+        .box2 {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+        .box2 > div {
+            height: 50px;
+            width: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+        }
+        .box2 > div:last-child{
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="box">
+      <div id="box1">
+        
+      </div><br>
+      <div class="box2">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>+</div>
+      </div>
+      <br>      <div class="box2">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+    </div><br>
+    <div class="box2">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>x</div>
+    </div><br>
+    <div class="box2">
+        <div style="background:red;color:white;">C</div>
+        <div>0</div>
+        <div style="background:brown;color:white;">=</div>
+        <div>/</div>
+    </div>
+    </div>
+</body>
+</html>

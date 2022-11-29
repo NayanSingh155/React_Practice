@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_name": "Dell Laptop",
+      "rating": 3.8,
+      "price": 37250,
+      "category": "Electronics",
+      "desc": "Dell XPS eXtreme Performance System is a line of consumer-oriented high-end laptop and desktop computers manufactured by Dell",
+      "reviews": [
+        {
+          "by": "user1",
+          "review": "This unit got what I wanted. Display quality is to be seen to be believed. Keyboard-good. Trackpad-great. Battery Life, great. Number of ports-a pleasant surprise. SSD storage of 512 GB is more than what I required. Yet, Apple MacBook in aluminium stands out, in terms of looks. This LG 14 incher in black will not"
+        },
+        {
+          "by": "user2",
+          "review": "I purchased this machine last week,the display is awesome same as LG OLED panels, very lightweight, fast in response, easy to read and write, touch pad is smooth. "
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "product_name": "Samsung galaxy M51",
+      "rating": 2.7,
+      "price": 37235,
+      "category": "Electronics"
+    },
+    {
+      "id": 3,
+      "product_name": "Tomatoes",
+      "rating": 3.5,
+      "price": 33398,
+      "category": "Grocery"
+    },
+    {
+      "id": 4,
+      "product_name": "Lays Tangy Tomato",
+      "rating": 1.2,
+      "price": 14281,
+      "category": "Grocery"
+    },
+    {
+      "id": 5,
+      "product_name": "Cotton T Shirt",
+      "rating": 4.1,
+      "price": 43948,
+      "category": "Fashion"
+    },
+    {
+      "id": 6,
+      "product_name": "iPhone 13",
+      "rating": 1.5,
+      "price": 42631,
+      "category": "Electronics"
+    },
+    {
+      "id": 7,
+      "product_name": "Mens Shoes",
+      "rating": 3.6,
+      "price": 49007,
+      "category": "Fashion"
+    },
+    {
+      "id": 8,
+      "product_name": "Summer Hat",
+      "rating": 3.6,
+      "price": 35339,
+      "category": "Fashion"
+    },
+    {
+      "id": 9,
+      "product_name": "dLink Router",
+      "rating": 2.9,
+      "price": 38411,
+      "category": "Electronics"
+    },
+    {
+      "id": 10,
+      "product_name": "Coconut Oil",
+      "rating": 1.9,
+      "price": 42645,
+      "category": "Grocery"
+    }
+  ]
+}

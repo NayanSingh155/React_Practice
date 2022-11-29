@@ -1,0 +1,7 @@
+.App {
+  font-family: Regular;
+}
+.Button :hover {
+  color: black !important;
+  background-color: cornflowerblue !important;
+}

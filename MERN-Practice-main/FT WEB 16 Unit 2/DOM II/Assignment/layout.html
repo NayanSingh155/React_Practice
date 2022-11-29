@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box {
+    display: grid;
+    grid-template-columns:repeat(9,105px);
+    grid-template-rows: 40px; 
+    gap: 10px;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+#box > div {
+text-align: center;
+padding-left: -10px;
+padding-right: -10px;
+font-size: 25px;
+color: white;
+
+margin-top: 8px;
+border-radius: 5px;
+
+
+}
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <div>Primary</div>
+        <div>Secondary</div>
+        <div>Success</div>
+        <div>Danger</div>
+        <div>Warning</div>
+        <div>Info</div>
+        <div>Light</div>
+        <div>Dark</div>
+        <div><a href="">Link</a></div>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelectorAll("#box>div")[0].style.background="blue";
+    document.querySelectorAll("#box>div")[1].style.background="teal";
+    document.querySelectorAll("#box>div")[2].style.background="green";
+    document.querySelectorAll("#box>div")[3].style.background="red";
+    document.querySelectorAll("#box>div")[4].style.background="yellow";
+    document.querySelectorAll("#box>div")[5].style.background="purple";
+    document.querySelectorAll("#box>div")[6].style.background="lightpink";
+    document.querySelectorAll("#box>div")[7].style.background="black";
+    document.querySelectorAll("#box>div")[8].style.background="whitesmoke";
+    document.querySelectorAll("#box>div")[4].style.color="black";
+    document.querySelectorAll("#box>div")[6].style.color="black";
+
+
+
+
+
+
+
+
+
+
+
+</script>

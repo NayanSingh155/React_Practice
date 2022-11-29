@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="firstName" type="text" placeholder="enter firstName" value="" />
+    <input type="text" id="lastName" placeholder="Enter lastName" value="" />
+    <input id="age" placeholder="Enter age" value="" />
+    <select id="selectTag">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <button onClick="inputChecking()">Submit</button>
+    <h1 id="h1Tag">Show the output here</h1>
+
+    <!-- selectTag -->
+  </body>
+</html>
+
+<script>
+  // input , Select/options
+
+  function inputChecking() {
+    var fName = document.getElementById("firstName").value;
+    var lName = document.getElementById("lastName").value;
+    var age = document.getElementById("age").value;
+    var gender = document.getElementById("selectTag").value;
+    //console.log(selectedValue);
+    document.getElementById("h1Tag").innerText =
+      fName + " " + lName + " " + age+" "+gender
+  }
+</script>

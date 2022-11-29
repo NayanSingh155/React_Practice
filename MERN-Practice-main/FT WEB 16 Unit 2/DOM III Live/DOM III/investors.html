@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #logo {
+        height: 100px;
+        width: 100px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <div>
+                    <img src="" alt="">
+                    <h2></h2>
+                    <p>Roles</p>
+                    <img src="" alt="">
+            </div> -->
+    </div>
+  </body>
+</html>
+
+<script>
+  var investors = [
+    {
+      id: 5,
+      name: "Ankush Sachdeva",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/ankush-sachdeva-sharechat.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 6,
+      name: "Bhanu Pratap Singh",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/bhanu-pratap-singh-sharechat.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-founder and CTO, ShareChat",
+    },
+    {
+      id: 7,
+      name: "Farid Ahsan",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/farid-ahsan-sharechat.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-founder and COO, ShareChat",
+    },
+    {
+      id: 8,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/preeti.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 5,
+      name: "Ankush Sachdeva",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/ankush-sachdeva-sharechat.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 6,
+      name: "Bhanu Pratap Singh",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/bhanu-pratap-singh-sharechat.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-founder and CTO, ShareChat",
+    },
+    {
+      id: 7,
+      name: "Farid Ahsan",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/our-investors/farid-ahsan-sharechat.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-founder and COO, ShareChat",
+    },
+    {
+      id: 8,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/preeti.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 1,
+      name: "Vijay Shekhar Sharma",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/prateek.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 2,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/yogesh.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 3,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/nrupul.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 4,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/ankur.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 5,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/sumeet.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 6,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/keshav_misra.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 7,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/sudhir_mor.jpeg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      id: 8,
+      name: "Prateek Shukla",
+      image:
+        "https://d27028dliefpk3.cloudfront.net/assets/masai-team/preeti.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+  ];
+
+  investors.map(function (elem, index, array) {
+    // image, name , company logo image , role
+    var div = document.createElement("div");
+    var avatar = document.createElement("img");
+    avatar.setAttribute("src", elem.image);
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+
+    var role = document.createElement("p");
+    role.innerText = elem.role;
+
+    var logo = document.createElement("img");
+    logo.setAttribute("src", elem.companyLogo);
+    logo.setAttribute("id", "logo");
+
+    div.append(avatar, name, role, logo);
+    document.querySelector("#container").append(div);
+  });
+</script>

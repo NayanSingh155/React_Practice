@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1Tag">I am h1 tag</h1>
+
+    <h2 class="h2Tag">I am h2 tag</h2>
+
+    <p class="para">I am p1</p>
+    <p class="para">I am p2</p>
+    <p class="para">I am p3</p>
+    <p class="para">I am p4</p>
+  </body>
+</html>
+
+<script>
+  // is id unique? -- Yes
+  // class is unique ? -- we can have multiples tags with same classNAme
+
+  console.log(document.getElementsByClassName("h1Tag"));
+  // returning an array with elements --> [h1Tag]
+
+  console.log(document.getElementsByClassName("para")[3].innerText);
+  // returing an array with 2 elements --> [p,p]
+
+  var pTags = document.getElementsByClassName("para");
+
+  for (var i = 0; i < pTags.length; i++) {
+    console.log(pTags[i].innerText);
+  }
+
+  
+  
+</script>

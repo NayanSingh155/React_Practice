@@ -1,0 +1,75 @@
+{
+  "todo": [
+    {
+      "title": "HTML",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "CSS",
+      "status": true,
+      "id": 5
+    },
+    {
+      "title": "React",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "JS",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "TypeScript",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "Boot strap",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "Figma",
+      "status": false,
+      "id": 10
+    },
+    {
+      "title": "CLI Bash",
+      "status": false,
+      "id": 11
+    },
+    {
+      "title": "Node",
+      "status": false,
+      "id": 12
+    },
+    {
+      "title": "DSA",
+      "status": false,
+      "id": 13
+    },
+    {
+      "title": "JAVA",
+      "status": false,
+      "id": 14
+    },
+    {
+      "title": "I",
+      "status": false,
+      "id": 23
+    }
+  ],
+  "formData": [
+    {
+      "name": "Muskan Shaw",
+      "address": "kolkata",
+      "age": "22",
+      "department": "Management",
+      "salary": "10000",
+      "marital_status": "no",
+      "id": 1
+    }
+  ]
+}

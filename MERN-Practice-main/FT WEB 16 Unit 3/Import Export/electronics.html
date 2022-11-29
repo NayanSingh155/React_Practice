@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+   
+</head>
+<body>
+    <div id="header"> </div>
+       <div id="parent">
+
+       </div>
+</body>
+</html>
+
+<script type="module">
+    let box1 = document.getElementById("parent")
+    console.log(parent)
+    import navbar from "./components/navbar.js"
+//  console.log(navbar)
+    import{get,append} from "./scripts/main.js"
+      //  console.log(get,append)
+   
+    let header=document.getElementById("header")
+    header.innerHTML=navbar()
+    let response = await get("https://fakestoreapi.com/products/category/electronics")
+    console.log(response)
+    append(response,box1);
+    </script>

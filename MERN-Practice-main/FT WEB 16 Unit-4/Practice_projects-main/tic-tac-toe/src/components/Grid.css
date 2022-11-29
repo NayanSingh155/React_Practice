@@ -1,0 +1,11 @@
+.grid{
+    width:100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:30% 30% 30% ;
+  
+   
+}
+.squares{
+    border:1px solid
+}

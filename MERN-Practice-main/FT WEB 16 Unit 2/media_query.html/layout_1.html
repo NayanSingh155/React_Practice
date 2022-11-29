@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 60px 200px;
+            margin: auto;
+            gap: 20px;
+            
+            grid-template-areas: 
+            "a a a a"
+            "b c d e"
+            ;
+        }
+        #box > div:nth-child(1){
+            background: yellow;;
+            grid-area: a;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+            
+
+
+        }
+        #box > div:nth-child(2){
+            background: red;
+            grid-area: b;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+
+        }
+        #box > div:nth-child(3){
+            background: yellow;
+            grid-area: c;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+
+
+        }
+        #box > div:nth-child(4){
+            background: blue;
+            grid-area: d;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+
+
+        }
+        #box > div:nth-child(5){
+            background: green;
+            grid-area: e;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+
+
+        }
+        @media all and (max-width:700px) and (min-width:381px){
+            #box {
+            
+            
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 60px 200px 200px;
+            
+            
+            
+            grid-template-areas: 
+            "a a "
+            "b d "
+            "c e"
+            ;
+        }
+        }
+        @media all and (max-width:380px) and (min-width:50px){
+        #box {
+            
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: 60px 200px 200px 200px 200px;
+            
+            
+            
+            grid-template-areas: 
+            "a"
+        "b"
+            "e"
+            "c"
+            "d"
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>Navigation</div>
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>Box4</div>
+
+    </div>
+</body>
+</html>

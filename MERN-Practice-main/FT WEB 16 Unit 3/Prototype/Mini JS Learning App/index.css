@@ -1,0 +1,36 @@
+#buttons > div{
+    width: 25%;
+    height: 400px;
+    
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+
+}
+#buttons {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    margin-top: 10px;
+    background-color: black;
+    color: antiquewhite;
+    
+}
+button:hover{
+    background-color: blue;
+    color: black;
+    
+}
+h1 ,p {
+    text-align: center;
+}
+ul {
+    display: none;
+}
+ul >li {
+text-align: justify;
+}

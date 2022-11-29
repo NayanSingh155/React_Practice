@@ -1,0 +1,150 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+  background-color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Navbar {
+  width:100%;
+  margin: auto;
+  background-color: black;
+  /* text-align:center ; */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar img {
+  width: 200px;
+  height: 50px;
+}
+.Navbar ul {
+  display: flex;
+  list-style-type: none;
+  /* cursor: pointer; */
+  /* justify-content: sp; */
+  gap: 30px;
+  color:aqua;
+  margin-right: 25px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: aqua;
+}
+.home{
+  color: aliceblue;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 70%;
+  margin: auto;
+  color: aqua;
+  font-size: 13px;
+  gap: 20px;
+}
+.blogs>div{
+  /* border: 1px solid white; */
+  background-color: #000000d0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-content: space-between; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+h2{
+  color: aqua;
+  width: 70%;
+  margin:  auto;
+  padding:20px 10px;
+}
+.blogs >div p{
+  /* margin-top: 20px; */
+  margin-top: 10px;
+}
+.form{
+  width: 20%;
+  margin: 30px auto;
+}
+.form input{
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+}
+.form input:last-child{
+  background-color: gray;
+  color: black;
+}
+.delete{
+  /* background-color: wheat; */
+  width: 40%;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+}
+.delete button{
+  margin-top: 10px;
+ margin-left: 20px;
+ padding: 5px 10px;
+ color: blue;
+ background-color: black;
+ cursor: pointer;
+}
+.blog{
+  width: 70%;
+  margin: auto;
+  color: aqua;
+  line-height: 20px;
+  font-size: medium;
+}
+.blog button {
+  padding: 10px 20px;
+  background-color: black;
+  color: aqua;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.blog button:hover{
+ border: 1px solid white;
+ 
+}
+.btn {
+  background-color: #333;
+  color: aqua;
+  padding: 7px;
+  width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+.btn:hover{
+  border: 1px solid white;
+  
+}
+.signup{
+  background-color: black;
+  border-radius: 15px;
+  width: 30%;
+  margin: 50px auto ;
+  text-align: center;
+  color: aqua;
+  padding: 20px;
+  font-size: medium;
+}
+.signup input{
+  background-color: #333;
+  margin-left: 15px;
+}

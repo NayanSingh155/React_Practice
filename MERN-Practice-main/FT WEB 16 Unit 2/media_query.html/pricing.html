@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 70%;;
+            height: 3500px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 350px;
+            margin: auto;
+            gap: 10px;
+        }
+        #box > div{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            margin-top: 35px;
+            text-align: center;
+            box-sizing: border-box;
+            
+
+        }
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 50px;
+
+        }
+        h2+p{
+            text-align:center;
+            color: brown;
+        }
+        h1+p{
+            font-family: italic;
+            margin-top: -25px;
+        }
+        p+p {
+            
+            color: grey;
+            font-family: serif;
+            padding: 0px 10px;
+        }
+        .button1{
+            margin-top: 20px;
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            padding: 8px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }.button2 {
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            padding: 8px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        @media all and (min-width:381px) and (max-width:700px){
+            #box {
+            
+            
+            
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 350px 350px; 
+            
+        }
+        }
+        @media all and (min-width:50px) and (max-width:380px){
+            #box {
+            
+            
+            
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 350px 350px 350px; 
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <h2>
+    Choose a plan that right for <br>
+     your business
+</h2>
+<p>
+    We collect reviews from our users so you can get an honest opinion of what an <br> experience with our website are really like!
+</p>
+<div id="box">
+<div>
+    <h3>
+        Starter Plan
+    </h3>
+    <h1>
+        Free
+    </h1>
+    <p>
+        Per Month
+    </p>
+    <P>
+        We collect reviews from our users so you can get an honest opinion of what an experience with our website.
+    </P>
+    <button class="button1"> 
+        Start Now
+    </button>
+</div>
+<div>
+    <h3>
+        Business Plan
+    </h3>
+    <h1>
+        $39.00
+    </h1>
+    <p>
+        Per Month
+    </p>
+    <P>
+        We collect reviews from our users so you can get an honest opinion of what an experience with our website.
+    </P>
+    <button class="button2"> 
+        Start Now
+    </button></div>
+<div>
+    <h3>
+        Starter Plan
+    </h3>
+    <h1>
+        Free
+    </h1>
+    <p>
+        Per Month
+    </p>
+    <P>
+        We collect reviews from our users so you can get an honest opinion of what an experience with our website.
+    </P>
+    <button class="button1"> 
+        Start Now
+    </button>
+</div>
+    </div>
+</body>
+</html>

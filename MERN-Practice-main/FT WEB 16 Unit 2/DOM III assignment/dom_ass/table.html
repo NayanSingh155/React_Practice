@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th {
+            border: 1.5px solid black;
+            border-collapse: collapse;
+            
+        }
+        thead {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Science</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+    var tableObj = [
+    { name: "Nrupul", science: 100, maths: 99,english:98 },
+    { name: "chandra", science: 77, maths: 20,english:97 },
+    { name: "prateek", science: 56, maths: 50,english:91 },
+    { name: "Ashoka", science: 45, maths: 76 ,english:92},
+    { name: "Varun", science: 76, maths: 88,english:88 },
+    { name: "Nikita", science: 70, maths: 80,english:72 },
+  ];
+
+  tableObj.map(function (elem){
+      var row=document.createElement("tr");
+    var c1=  document.createElement("td");  
+    c1.innerText=elem.name;
+    var c2=  document.createElement("td");  
+    c2.innerText=elem.maths;
+    var c3=  document.createElement("td");  
+    c3.innerText=elem.english;
+   
+    var c4=  document.createElement("td");  
+    c4.innerText=elem.science;
+    row.append(c1,c2,c3,c4);
+    document.querySelector("tbody").append(row);
+    });
+
+</script>

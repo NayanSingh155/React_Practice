@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            display: flex;
+            margin: auto;
+        justify-content: space-between;
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 30px;
+
+    
+        }
+        .box > div {
+            border: 2px solid black;
+            height: 100px;
+            width: 150px;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            
+            
+
+        }
+        .box > div:first-child{
+            background-color: red;
+        }
+        .box > div:last-child{
+            background-color: green;
+        }
+        .box p:first-child{
+            margin-left: 40px;
+            margin-top: -30px;
+        }
+        .box p:last-child{
+            margin-right: 40px;
+            margin-top: -30px;
+        }
+        #score{
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: -15px;
+        }
+        #scorebox{
+            border: 2px  solid black;
+            background-color: green;
+            height: 150px;
+            width: 320px;
+            margin: auto;
+            margin-top: -40px;
+            text-align: center;
+            font-size: 70px;
+            font-weight: bold;
+            padding-top: 30px;
+            box-sizing: border-box;
+
+
+        }
+        #numbers{
+            display: grid;
+            width: 320px;
+            margin: auto;
+            grid-template-columns: repeat(3,90px);
+            grid-template-rows: repeat(3,90px);
+            gap: 25px;
+            margin-top: 20px;
+
+        }
+        #numbers>div {
+            background-color: orange;
+        }
+        #numbers > div {
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 50px;
+            padding-top: 15px;
+        }
+       #numbers > .num {
+            background-color: teal;
+        }
+        .num1 {
+            background-color: teal;
+            height: 90px;
+            width: 90px;
+            margin: auto;
+            margin-top: 25px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 50px;
+            padding-top: 15px;
+        }
+       
+
+#enter {
+    background-color: brown;
+    color: beige;
+    font-size: 20px;
+    font-weight: bold;
+    height: 75px;
+    width: 280px;
+    margin: auto;
+    margin-top: 25px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 50px;
+            padding-top: 10px;
+            border: 2px solid black;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="min">43</div>
+        <div id="max">2019</div>
+    </div>
+  <div class="box" >
+    <p>MIN</p>
+
+    <p>MAX</p>
+  </div>
+  <p id="score" >SCORE</p>
+  <div id="scorebox">#</div>
+  <div id="numbers">
+<div class="num" onClick="press(1)">1</div>
+<div onClick="press(2)">2</div>
+<div class="num" onClick="press(3)">3</div>
+<div onClick="press(4)">4</div>
+<div class="num" onClick="press(5)">5</div>
+<div onClick="press(6)">6</div>
+<div class="num" onClick="press(7)">7</div>
+<div onClick="press(8)">8</div>
+<div  class="num" onClick="press(9)">9</div>
+
+  </div>
+  <div class="num1" onClick="press(0)"
+ >0</div>
+ <div id="enter" onClick="enterBtn()">ENTER</div>
+</body>
+</html>
+<script>
+    var bag ="";
+    var min= Number(document.querySelector("#min").innerText);
+    var  max = Number(document.querySelector("#max").innerText);
+   // console.log(min);
+function press(num){
+bag = bag + num;
+document.querySelector("#scorebox").innerText = bag;
+}
+function enterBtn(){
+   
+    if (Number(bag) > max) {
+          max = bag;
+          document.querySelector("#max").innerText = max;
+        }
+       else if (Number(bag) < min) {
+          min = bag;
+          document.querySelector("#min").innerText = min;
+        }
+        bag = "";
+        document.querySelector("#boxscore").innerText = "";
+}
+
+</script>

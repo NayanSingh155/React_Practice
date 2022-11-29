@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" />
+    <button>Submit</button>
+    <p></p>
+  </body>
+</html>
+<script>
+  // 1st task
+  //console.log(document.querySelector("input"))
+
+  document
+    .querySelector("button")
+    .addEventListener("click", sumOfMultipleTasks);
+
+  function sumOfMultipleTasks() {
+    var limit = document.querySelector("input").value;
+    var sum = 0;
+
+    for (var i = 1; i <= limit; i++) {
+      if (i % 15 == 0) {
+        sum = sum + i;
+      }
+    }
+    document.querySelector("p").innerText = sum;
+  }
+
+  // 2nd task - i want to get sum of multiples of 3 and 5 within 50
+</script>

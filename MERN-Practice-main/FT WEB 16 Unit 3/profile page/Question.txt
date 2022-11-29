@@ -1,0 +1,16 @@
+1. Create a Sign up system where a user can sign up
+2. Login
+3. Once logged in, they should be able to show their entered data on DOM.
+
+use following api https://github.com/masai-school/api-mocker/wiki/Authentication-API 
+
+base url -  https://masai-api-mocker.herokuapp.com
+
+
+
+GET -  it's used to get something/dat from the API
+POST - it's used to send data to the API
+
+//username - mar23411user
+//password - mar23411@123
+

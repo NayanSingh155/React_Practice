@@ -1,0 +1,23 @@
+#parent {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+
+}
+#parent img {
+    height: 250px;
+    width: 250px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#options {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}

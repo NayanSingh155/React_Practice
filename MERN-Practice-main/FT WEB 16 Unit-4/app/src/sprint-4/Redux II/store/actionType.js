@@ -1,0 +1,7 @@
+export const INCREMENT="INCREMENT"
+export const DECREMENT="DECREMENT"
+export const GET_TODOS="GET_TODOS"
+export const DELETE_TODOS="DELETE_TODOS"
+export const GET_TODOS_REQUEST="GET_TODOS_REQUEST"
+export const GET_TODOS_ERROR="GET_TODOS_ERROR"
+export const ADD_TODOS="ADD_TODOS"

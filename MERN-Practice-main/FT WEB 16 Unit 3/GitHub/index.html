@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="box">
+
+    </div>
+</body>
+</html>
+<script type="module">
+import {nav} from "./com/nav.js";
+console.log(nav)
+let navbar = document.getElementById("navbar")
+navbar.innerHTML=nav()
+//https://api.github.com/users/swanandapps/repos
+let input=document.getElementById("search-input")
+input.addEventListener("keypress",function(){
+	get(event)
+})
+let img = document.getElementById("profile-img");
+const get = async(e) => {
+    // console.log(e)
+	if(e.code==="Enter"){
+	let val = input.value;
+     let res = await fetch(`https://api.github.com/users/${val}/repos`)
+     let data = await res.json()
+     img.src=data[0].owner.avatar_url
+  console.log(data)
+  append(data)
+     
+    }
+}
+
+let append = (data) => {
+    document.querySelector("#box").innerHTML=""
+    data.map((el) => {
+        let div = document.createElement("div");
+    let h3 = document.createElement("h3");
+    h3.innerText=el.full_name
+    let des = document.createElement("p")
+    des.innerText="Descripion : " + el.description;
+    
+    div.append(h3,des)
+    
+    document.querySelector("#box").append(div)
+    })
+}
+</script>

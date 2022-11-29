@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #heading h1{
+            text-align: center;
+            width: 30%;
+            margin: auto;
+        }
+        #heading> p {
+            text-align: center;
+            width: 40%;
+            margin: auto;
+            margin-top: 20px;
+            
+        }
+        #cards-section{
+            
+            width: 60%;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+        #cards-section > div {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   box-sizing: border-box;
+   padding: 20px 20px;
+   width: 34%;
+   text-align: center;
+        }
+       #cards-section .it{
+            font-style: italic;
+            font-size: 10px;
+            margin-top: -16px;
+        }
+        #cards-section>div>h1{
+            color: teal;
+        }
+        button{
+            background-color: transparent;
+            color: blue;
+            font-weight: 700;
+            border-radius: 5px;
+            padding: 7px 13px;
+            border: 1px solid blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+      <div>
+          <h3>Starter Plan</h3>
+          <h1>Free</h1>
+          <p class="it">Per Month</p>
+          <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+          <button>Start Now</button>
+      </div>
+      <div>
+        <h3>Starter Plan</h3>
+        <h1>$39.00</h1>
+        <p class="it">Per Month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+        <button>Start Now</button>
+    </div>
+    <div>
+        <h3>Starter Plan</h3>
+        <h1>$59.00</h1>
+        <p class="it">Per Month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+        <button>Start Now</button>
+    </div>
+    </div>
+  </body>
+</html>

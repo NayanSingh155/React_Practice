@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box {
+    width: 30%;
+    margin: 30px auto;
+}
+
+#box>div:first-child {
+    background-color: #232b2c;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+}
+#box1 {
+    background-color: #4f7377;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#box1>div {
+    background-color: aliceblue;
+    text-align: center;
+    
+}
+#box1>div:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+
+#box1>div>p {
+    margin-left: 72%;
+    margin-top: 10%;
+    color: #4f7377;
+    
+}
+#box1>div>h4{
+    margin-top: 30%;
+    font-size: 30px;
+}

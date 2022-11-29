@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: aqua;
+            margin: auto;
+            height: 30px;
+            text-align: center;
+            width: 130px;
+            padding-top:5px ;
+            box-sizing: border-box;
+            margin-left: 520px;
+        }
+        select {
+            background-color: blue;
+            border: 2px solid black;
+            margin-left: 500px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+
+        }
+        button {
+            background-color: red;
+            color: bisque;
+            margin-left: 530px;
+            margin-bottom: 30px;
+
+        
+
+        }
+        body {
+            background-color: pink;
+        }
+    </style>
+
+
+</head>
+<body>
+    <select id = "continent_select">
+        <option value = "India"> India </option>	
+        <option value = "United_States_of_America">United States of America </option>	
+        <option value = "China"> China </option>	
+        <option value = "Nepal"> Nepal</option>	
+
+        <option value = "Australia"> Australia </option>	
+
+        <option value = "France"> France</option>	
+        <option value = "Germany"> Germany</option>	
+
+        <option value = "South_Africa"> South Africa </option>	
+
+        <option value = "Nigeria"> Nigeria</option>	
+
+        <option value = "Mexico"> Mexico</option>	
+        <option value = "Argentina"> Argentina </option>	
+
+        <option value = "Brazil"> Brzil</option>	
+
+        <option value = "Canada"> Canada</option>	
+
+        <option value = "Singapore"> Singapore</option>	
+
+        <option value = "Sweden"> Sweden </option>	
+
+
+    </select>
+    <br>
+
+    <button onClick="findContinent()">Find Continent</button>
+<br>
+
+    <div>
+        See output Here
+    </div>
+</body>
+</html>
+<script>
+
+   function findContinent(){
+       var conObj = {
+            India : "Asia",
+       United_States_of_America : "North America",
+             China : "Asia",
+Nepal : "Asia",
+Australia : "Southern Hemisphere",
+France : "Europe",
+Germany : "Europe",
+South_Africa : "Africa",
+Nigeria : "Africa",
+Mexico : "North America",
+Argentina : "South America",
+Brazil :  "South America",
+Canada : "North America",
+Singapore : "Asia",
+Sweden : "Europe"
+        };
+        //console.log(conObj);
+        var con_value=  document.querySelector("select").value;
+      // console.log(con_value);
+      for(x in conObj){
+          if(con_value==x){
+              document.querySelector("div").innerText = conObj[x];
+              var a = document.querySelector("div").innerText;
+              alert("The continent is "+a);
+          }
+      }
+     
+    }
+    
+</script>

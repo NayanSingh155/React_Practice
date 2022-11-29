@@ -1,0 +1,35 @@
+#container {
+    display: flex;
+}
+#sidebar {
+    border: 1px solid black;
+}
+#sidebar > div {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+#searchbar {
+    margin-bottom: 10px;
+    /* background-color: black; */
+}
+
+#main {
+border : 1px solid black;
+margin-left: 20px;
+padding: 10px;
+margin-bottom: 10px;
+}
+#main img {
+    height: 250px;
+    width: 300px;
+
+}
+#main> div {
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+#main > div > div {
+    width: 300px;
+    border: 1px solid black;
+
+}

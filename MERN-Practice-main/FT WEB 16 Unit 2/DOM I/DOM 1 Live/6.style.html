@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <style>
+    body {
+      background: rgb(168, 155, 155);
+    }
+  </style>
+  <body id="bodyTag">
+    <h1 id="h1Tag">I am h1 tag</h1>
+
+    <button id="buttonTag" onClick="changeMode()">DarK Mode</button>
+  </body>
+</html>
+
+<script>
+  document.getElementById("h1Tag").style.backgroundColor = "teal";
+  document.getElementById("h1Tag").style.color = "red";
+  document.getElementById("h1Tag").style.fontSize = "10px";
+
+  function changeMode() {
+    document.getElementById("bodyTag").style.backgroundColor = "black";
+    document.getElementById("h1Tag").style.backgroundColor = "white";
+    document.getElementById("buttonTag").style.backgroundColor = "red";
+  }
+</script>

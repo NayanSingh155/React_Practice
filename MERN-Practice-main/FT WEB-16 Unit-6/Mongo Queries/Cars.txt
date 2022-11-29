@@ -1,0 +1,46 @@
+//Men who own a Pink car
+
+web16> db.cars.find({$and:[{gender:"Male"},{car_color:"Pink"}]})
+
+//Women who own a Red or a Blue Car
+
+web16> db.cars.find({$and:[{gender:"Male"},{$or:[{car_color:"Blue"},{car_color:"Red"}]}]}) 
+
+//Men who purchased the car in the year 1998
+
+web16> db.cars.find({$and:[{gender:"Male"},{purchase_year:"1998"}]})
+
+//Women who purchased a Yellow car in the year 1985
+
+web16> db.cars.find({$and:[{gender:"Feale"},{purchase_year:"1985"},{car_color:"Yellow"}]})
+
+//Men who either have a Red or Green car and either live in Germany or Kenya
+
+web16> db.cars.find({$and:[{$or:[{country:"Germany"},{country:"Kenya"}]},{$or:[{car_color:"Green"},{car_color:"Red"}]}]}) 
+
+//People from India who purchased cars in the year 2001
+
+web16> db.cars.find({$and:[{country:"India"},{purchase_year:"2001"}]})
+
+//People from Germany or Egypt who purchased cars in the year 1998 or 1992
+
+web16> db.cars.find({$and:[{$or:[{country:"Germany"},{country:"Egypt"}]},{$or:[{purchase_year:"1998"},{purchase_year:"1992"}]}]}) 
+
+//Women from India who own a Blue car
+
+web16> db.cars.find({$and:[{gender:"Female"},{country:"India"},{car_color:"Blue"}]})
+
+
+//Men from Germany who purchased cars in 1998 and Men from Egypt who purchased cars in 1992
+
+web16> db.cars.find({$or:[{$and:[{gender:"Male"},{purchase_year:1998},{country:"Germany"}]},{$and:[{gender:"Male"},{purchase_year:1992},{country:"Egypt"}]}]})
+
+//Women who own a Green car and are not from Pakistan
+
+web16> db.cars.find({$and:[{car_color:"Green"},{gender:"Female"},{country:{$nin:["Pakistan"]}}]})
+
+
+
+
+
+

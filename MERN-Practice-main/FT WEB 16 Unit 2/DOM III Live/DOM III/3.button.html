@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  //   var colors = ["blue", "grey", "green", "red", "orange", "cyan"];
+
+  //   var text = ["primary", "secondary", "danger", "info", "success"];
+
+  var btnObj = [
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+    { text: "primary", bgcolor: "blue", color: "white" },
+    { text: "Seconday", bgcolor: "grey", color: "white" },
+    { text: "Success", bgcolor: "green", color: "white" },
+    { text: "Danger", bgcolor: "red", color: "white" },
+    { text: "Warning", bgcolor: "yellow", color: "black" },
+    { text: "Info", bgcolor: "cyan", color: "white" },
+    { text: "Light", bgcolor: "whitesmoke", color: "black" },
+    { text: "Dark", bgcolor: "black", color: "white" },
+  ];
+
+  // innertext, bgcolor , color
+
+  btnObj.map(function (elem, index, array) {
+    // how many times? 8 times
+    console.log(elem.text);
+    console.log(elem.bgcolor);
+    console.log(elem.color);
+    var btn1 = document.createElement("button");
+    btn1.innerText = elem.text;
+    btn1.style.backgroundColor = elem.bgcolor;
+    btn1.style.color = elem.color;
+    document.querySelector("body").append(btn1);
+  });
+
+  //   for (var i = 0; i < colors.length; i++) {
+  //     var btn1 = document.createElement("button");
+  //     btn1.innerText = text[i];
+  //     btn1.style.backgroundColor = colors[i];
+  //     btn1.style.color = "white";
+  //     document.querySelector("body").append(btn1);
+  //   }
+
+  //   var btn2 = document.createElement("button");
+  //   btn2.innerText = "Secondary";
+  //   btn2.style.backgroundColor = "grey";
+  //   btn2.style.color = "white";
+
+  //   var btn3 = document.createElement("button");
+  //   btn3.innerText = "Success";
+  //   btn3.style.backgroundColor = "green";
+  //   btn3.style.color = "white";
+
+  //   var btn4 = document.createElement("button");
+  //   btn4.innerText = "Danger";
+  //   btn4.style.backgroundColor = "red";
+  //   btn4.style.color = "white";
+
+  //   var btn5 = document.createElement("button");
+  //   btn5.innerText = "Warning";
+  //   btn5.style.backgroundColor = "yellow";
+  //   btn5.style.color = "white";
+
+  //   var btn6 = document.createElement("button");
+  //   btn6.innerText = "Info";
+  //   btn6.style.backgroundColor = "cyan";
+  //   btn6.style.color = "white";
+</script>

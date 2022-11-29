@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: #e6e6e6;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  /* line-height: 1.5; */
+}
+* {
+  box-sizing: border-box;
+}
+#banner {
+  width: 100%;
+   height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+}
+#banner video {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 85px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#banner #contents {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+#banner #contents h1 {
+  font-size: 55px;
+}
+#banner #contents h2 {
+  font-size: 34px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#banner button,
+#join button {
+  background: #c94f17;
+  border: none;
+  border-radius: 40px;
+
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  line-height: 1.25;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 20px;
+  height: 60px;
+  width: 250px;
+  font-weight: bold;
+}
+#banner a {
+  text-decoration: none;
+}
+#banner #contents div {
+  display: flex;
+  margin-left: 25px;
+}
+#icons {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#icons img {
+  height: 90px;
+  width: 90px;
+  margin-top: 10px;
+  margin-left: 10px;
+  object-fit: contain;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+#icons img:hover {
+  /* border: 1px solid #eff; */
+  /* border-radius: 20px; */
+  /* padding: 10px; */
+  box-sizing: border-box;
+  opacity: 1;
+  transform: scale(1.2);
+  /* box-sizing: border-box; */
+}
+#slidebar {
+  background: #3a7bd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #3a7bd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #3a7bd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+}
+#join {
+  height: 700px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url("https://static.frontendmasters.com/assets/fm/js/static/bg2.c89a0cad3a.jpg");
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#join div div a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#join div {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+#join h1 {
+  font-size: 35px;
+  line-height: 50px;
+}
+#join button:hover {
+  background-color: chocolate;
+  cursor: pointer;
+}
+#bootcamp {
+  margin-top: 700px;
+  height: 350px;
+  width: 100%;
+  text-align: center;
+  /* display: flex; */
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  background-image: url("https://static.frontendmasters.com/assets/fm/js/static/bc-ad-bg.5d061b025d.png");
+}
+#bootcamp img {
+  height: auto;
+  width: 240px;
+  margin-top: 30px;
+}
+#bootcamp a {
+  color: #dd625e;
+  /* margin-top: 15px; */
+}
+#bootcamp a:hover {
+  color: chocolate;
+}
+#bootcamp p {
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+#clip1 {
+  background-color: #581010;
+  height: 150px;
+  width: 100%;
+  /* clip-path: polygon(100% 0, 0 0, 98% 56%);
+         */
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 99% 20%, 0 1%); */
+  clip-path: polygon(100% 0, 0 28%, 100% 26%);
+  margin-top: -20px;
+  margin-bottom: -120px;
+}
+
+
+@media all and (max-width: 768px) and (min-width: 381px) {
+  #banner {
+    background-size: auto, cover;
+    z-index: 2;
+    object-fit: cover;
+    height: 100vh;
+    background-image: url("	https://static.frontendmasters.com/assets/fm/js/static/bg1.8d7f86e8bd.jpg");
+  }
+  #banner video {
+    display: none;
+  }
+  #join {
+    height: 500px;
+    text-align: center;
+  }
+  #join div:first-child {
+    width: 80%;
+    text-align: center;
+  }
+  /* #join button {
+        background-color: #222;
+    } */
+  #bootcamp {
+    margin-top: 500px;
+  }
+  #clip1{
+    margin: -35px auto;
+    margin-bottom: -120px;
+
+  }
+}
+@media all and (min-width: 50px) and (max-width: 380px) {
+  #banner {
+    background-size: auto, cover;
+    z-index: 2;
+    object-fit: cover;
+    height: 100vh;
+    background-image: url("	https://static.frontendmasters.com/assets/fm/js/static/bg1.8d7f86e8bd.jpg");
+  }
+  #banner video {
+    display: none;
+  }
+  #banner #contents h1 {
+    font-size: 30px;
+    /* color: #222; */
+  }
+  #banner #contents h2 {
+    font-size: 15px;
+    /* margin-top: -15px; */
+  }
+  #contents > div {
+    display: flex;
+    flex-direction: column;
+  }
+  #contents button {
+    margin-top: 20px;
+  }
+  #join div:first-child {
+    width: 90%;
+  }
+  #join div {
+    margin: 20px;
+  }
+ 
+  #clip1{
+    margin: -35px auto;
+    margin-bottom: -120px;
+
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./Styles/index.css" />
+  </head>
+
+  <body>
+    <div id="links">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="database.html">Database</a></div>
+      <div><a href="admitted.html">Admitted</a></div>
+      <div><a href="rejected.html">Rejected</a></div>
+    </div>
+
+    <main>
+      <form action="" id="form">
+        <h2>Enter Your Details here</h2>
+        <input placeholder="Name" id="name" name="name" type="text" />
+        <input placeholder="Age" type="number" name="age" id="age" />
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input placeholder="E-Mail" type="email" name="email" id="email" />
+        <input
+          placeholder="Phone Number"
+          type="number"
+          name="phone"
+          id="phone"
+        />
+        <input id="submit" type="submit" name="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+  <script src="./Script/index.js"></script>
+</html>

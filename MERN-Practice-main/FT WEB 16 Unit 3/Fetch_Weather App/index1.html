@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #222;
+            font-size: 120%;
+                  }
+                  #box {
+                      display: flex;
+                      color: white;
+                      width: 97%;
+                      margin: auto;
+                      margin-top: 150px;
+                      
+
+                  }
+                  #box div {
+                      border-radius: 20px;
+                      background-color: #000000d0;
+                      width: 15%;
+
+                      margin-left: 5px;
+                  }
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+    let lon = localStorage.getItem("lon");
+    let lat= localStorage.getItem("lat")
+    
+ 
+  
+           async function display(){
+
+        let url =`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,hourly,minutely&appid=24e7d8342fd3963f05a340530d0a73f7&units=metric`
+        try{
+            let res = await fetch(url);
+            let data=await res.json();
+            console.log(data.daily)
+            console.log(data.daily[0])
+            get(data.daily)
+            let a =document.getElementById("days")
+            let x = data.daily
+        }
+        catch(err){
+         console.log(err)
+        }
+    }
+    let p;
+    function get(data){
+        data.forEach(function(el){
+            let d1 = document.createElement("div")
+             p = document.createElement("h2");
+            p.setAttribute("id","days")
+            
+            let img = document.createElement("img");
+            img.src= "https://openweathermap.org/img/wn/" + el.weather[0].icon + ".png";
+            let mt = document.createElement("h3");
+            mt.innerText=el.temp.min+"°C";
+            let mt1 = document.createElement("h3")
+            mt1.innerText=el.temp.max+"°C";
+            d1.append(p,img,mt,mt1)
+            document.querySelector("#box").append(d1)
+            window.localStorage.removeItem("cityname")
+            
+        })
+    }
+                                                                  
+  // let days =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+ 
+   
+ display()
+</script>

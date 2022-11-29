@@ -1,0 +1,15 @@
+ [   
+    {"strMeal": "Baingan Bharta",
+         "strMealThumb": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg", "idMeal": "52807","price": 299,"rate":4.5,"pay":"Accepts online Payments"},
+ {"strMeal": "Chicken Handi", "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg", "idMeal": "52795", "price": 299,"rate":1.5,"pay":"Accepts only Cards"},
+        {"strMeal": "Dal fry","strMealThumb": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg", "idMeal": "52785", "price": 99,"rate":3,"pay":"COD"},
+    {"strMeal": "Kidney Bean Curry","strMealThumb": "https://www.themealdb.com/images/media/meals/sywrsu1511463066.jpg", "idMeal": "52868", "price": 429,"rate":1.5,"pay":"Accepts only Cards"},
+     {"strMeal": "Lamb Biryani","strMealThumb": "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg", "idMeal": "52805", "price": 349,"rate":4.8,"pay":"Accepts online Payments"},
+     {"strMeal": "Lamb Rogan josh","strMealThumb": "https://www.themealdb.com/images/media/meals/vvstvq1487342592.jpg", "idMeal": "52808", "price": 699,"rate":5,"pay":"COD"},
+    {"strMeal": "Matar Paneer","strMealThumb": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg", "idMeal": "52865", "price": 149,"rate":1.5,"pay":"Accepts only Cards"},
+    {"strMeal": "Nutty Chicken Curry","strMealThumb": "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg", "idMeal": "52851", "price": 239,"rate":4.1,"pay":"Accepts online Payments"},
+     {"strMeal": "Recheado Masala Fish","strMealThumb": "https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg", "idMeal": "52809", "price": 399,"rate":5,"pay":"Accepts only Cards"},
+ {"strMeal": "Smoked Haddock Kedgeree","strMealThumb": "https://www.themealdb.com/images/media/meals/1550441275.jpg", "idMeal": "52964", "price": 459,"rate":2,"pay":"COD"},
+ {"strMeal": "Tandoori chicken","strMealThumb": "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg", "idMeal": "52806", "price": 499,"rate":3.5,"pay":"Accepts online Payments"}
+
+]

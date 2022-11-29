@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 120%;
+        }
+        #box1{
+            background-color: blue;
+            width: 40%;
+            height: 360px;
+            background-color: #000000d0;
+            border-radius: 20px;
+            color: aliceblue;
+            text-align: left;
+            padding: 20px;
+
+        }
+        #b1:hover {
+  background: #7c7c7c6b;
+}
+        #box {
+            margin: auto;
+            width: 70%;
+            display: flex;
+            margin-top: 30px;
+            
+        }
+        #b1 {
+            margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  background: #000000d0;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out
+}
+input {
+    border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #000000d0;
+  margin-top: 100px;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: 300px;
+}
+
+#box3 >  img {
+    height: 45px;
+    width: 30px;
+    margin-top: -10px;
+
+}
+#box3 > div {
+margin-top: 1.5px;
+margin-left: 15px;
+font-size: 20px;
+}
+#box3 + div {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+iframe{
+  height: 390px;
+  width: 50%;
+  border-radius: 20px;
+  margin-left: 20px;
+  background: #7c7c7c6b;
+
+}
+#bo {
+  margin: auto;
+  text-align: center;
+  display: none;
+  margin-top: 15px;
+}
+#bo #re{
+  width: 200px;
+  height: 30px;
+  background-color: #000000d0;
+  color: aqua;
+  
+  cursor: pointer;
+  transition: 0.2s ease-in-out
+  border: none;
+}
+#bo #re:hover{
+  border: 1px solid white;
+}
+a{
+  text-decoration: none;
+  color: aqua;
+}
+    </style>
+</head>
+<body>
+    <input type="text" onkeyup="get()" placeholder="Enter city " id="city">
+    <button id="b1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+        width="1.5em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+        </path>
+      </svg></button>
+
+    <div id="box">
+
+      </div>
+      <div id="bo"> 
+        <button id="re">
+       <a href="index1.html"> Check Weekly Forecast</a>
+        </button>
+      </div>
+</body>
+</html>
+<script>
+               
+              
+     async function get(){
+        let city = document.querySelector("input").value;
+        try{
+         let res =await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=24e7d8342fd3963f05a340530d0a73f7&units=metric`);
+          let data = await res.json();
+          console.log(data)
+          display(data)
+         }
+
+      catch(err) { 
+           throw new Error("No weather found.");
+         console.log(err)
+      }
+
+     }
+         function display(data){
+           if(data!==undefined){
+            document.getElementById("bo").style.display="block"
+
+           }
+           document.querySelector("#box").innerHTML="";
+           document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/1600x900/?" + data.name + "')";
+           let box1 = document.createElement("div")
+           box1.setAttribute("id","box1")
+           let name=document.createElement("h2");
+            name.innerText="Weather In "+data.name;
+            let mt=document.createElement("h1")
+            mt.innerText= "Max Temp: "+data.main.temp_max+"°C";
+            let mt1=document.createElement("h1")
+            mt1.innerText= "Min Temp: "+data.main.temp_min+ "°C";
+            let des = document.createElement("div")
+            des.style.display="flex";
+            des.setAttribute("id","box3")
+            let d1 = document.createElement("img");
+            d1.src=   "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
+           let d2 = document.createElement("div")
+           d2.innerText=data.weather[0].description
+           let hum = document.createElement("div")
+           hum.innerText="    "+ "   Humidity : "+data.main.humidity+"%"
+           let wind = document.createElement("div")
+           wind.innerText="Wind Speed : "+data.wind.speed+"Km/h"
+            des.append(d1,d2)
+            let map = document.createElement("iframe")
+            map.src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+         document.getElementById("bo").style.display="block"
+          box1.append(name,mt,mt1,des,hum,wind)
+            document.querySelector("#box").append(box1,map)
+            localStorage.setItem("lat",data.coord.lat)
+              localStorage.setItem("lon",data.coord.lon)
+
+    }
+  
+
+</script>

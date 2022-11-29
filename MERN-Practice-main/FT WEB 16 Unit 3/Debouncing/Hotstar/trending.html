@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #box {
+            margin: auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        #box img {
+            width: 200px;
+            height: 100%;
+        }
+        #box > div {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        #box > div > div {
+            margin-top: 50px;
+            padding-left: 7px;
+            padding-right: 7px;
+            text-align: justify;
+            color: aliceblue;
+            margin: 50px 7px;
+        }
+        body {
+            background-color: #2e3035;
+        }
+        h2 {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Trending Movies
+    </h1>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+    async function get(){
+        try {
+        let res = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=25f75169fed2fd6884acdcd371429b21')
+        let data = await res.json();
+        console.log(data)
+        display(data.results)
+
+    }
+    catch(err) {
+        console.log(err)
+    }
+
+    }
+    function display(data){
+        data.map(function(el){
+            let div = document.createElement("div")
+            let div1 = document.createElement("div")
+            let img = document.createElement("img");
+           img.src=`https://www.themoviedb.org/t/p/w220_and_h330_face${el.poster_path}`;
+           let name = document.createElement("h2");
+           name.innerText=el.title;
+           let p = document.createElement("p")
+           p.innerText=el.overview
+           div1.append(name,p)
+           div.append(img,div1)
+           div.style.display="flex"
+          document.getElementById("box").append(div)
+        })
+    }
+    get()
+</script>

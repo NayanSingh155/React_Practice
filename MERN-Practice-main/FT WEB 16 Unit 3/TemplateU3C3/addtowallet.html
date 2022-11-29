@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add amount</h1>
+
+    <div>
+      <!--DO NOT MAKE ANY CHANGES HERE, ONLY WRITE LOGIC IN SCRIPT TAG-->
+      <input type="number" id="amount"  />
+      <button onclick="addtoWallet()">Add to Wallet</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  //write logic here
+  function addtoWallet(){
+   
+    let value = +localStorage.getItem("wallet") + Number(document.getElementById("amount").value);
+    console.log(value)
+    localStorage.setItem("wallet",value)
+    document.getElementById("amount").value=""
+  }
+</script>

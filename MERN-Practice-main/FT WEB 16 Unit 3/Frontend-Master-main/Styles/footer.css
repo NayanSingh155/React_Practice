@@ -1,0 +1,127 @@
+#footer {
+  /* height: 300px; */
+  width: 100%;
+  background-color: black;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(177, 165, 165);
+}
+#footer a:hover {
+  color: #eff;
+}
+#footer .logo {
+  height: 40px;
+  width: 240px;
+  background-image: url("https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg");
+}
+#footer #footer2 {
+  display: flex;
+  margin-left: 22px;
+  margin-top: 15px;
+}
+#footer #footer2 img {
+  height: 72px;
+  width: 170px;
+}
+#footer #footer2 #apple {
+  height: 50px;
+  width: 160px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+#footer #footer3,
+#footer #footer4 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27px;
+  color: #8a8a8a;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+#footer #footer3 div:last-child a {
+  text-decoration: underline;
+  color: #c94f17;
+}
+#footer #footer3 i {
+  margin-right: 10px;
+  /* border-radius: 10%; */
+}
+ #footer  .right ul li:last-child {
+  background-color: transparent;
+  /* border-radius: 40px; */
+  /* transition: background 0.2s ease; */
+  margin-left: 0px;
+  /* background-color: white; */
+}
+.right ul li:last-child a {
+  line-height: 40px;
+  padding: 0px 4px;
+  font-size: 17px;
+  color: #fff;
+}
+.right ul li:last-child:hover {
+  background: #d43530;
+}
+@media all and (max-width: 768px) and (min-width: 381px) {
+  
+  #footer #footer2 #apple {
+    margin-top: 10px;
+  }
+  #footer #footer3,
+  #footer #footer4 {
+    flex-direction: column;
+  }
+  #footer .right {
+    margin-top: 15px;
+  }
+  #footer {
+    /* height: 400px; */
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #footer #footer3 > div:last-child {
+    margin-top: 20px;
+  }
+  #footer #footer4 > p:last-child {
+    margin-top: 20px;
+  }
+}
+@media all and (min-width: 50px) and (max-width: 380px) {
+ 
+  #footer #footer2 #apple {
+    margin-top: 10px;
+  }
+  #footer #footer3,
+  #footer #footer4,
+  #footer #footer2 {
+    flex-direction: column;
+  }
+  
+  #footer {
+    /* height: 500px; */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #footer #footer3 > div:last-child {
+    margin-top: 20px;
+  }
+  #footer #footer4 > p:last-child {
+    margin-top: 20px;
+  }
+ .mobile .active {
+    display: block;
+  }
+ #footer .mobile ul li:last-child {
+    background-color: transparent;
+    /* border-radius: 40px; */
+    /* transition: background 0.2s ease; */
+    margin-top: -10px;
+    text-align: left;
+    margin-left: -2px;
+  }
+  
+}

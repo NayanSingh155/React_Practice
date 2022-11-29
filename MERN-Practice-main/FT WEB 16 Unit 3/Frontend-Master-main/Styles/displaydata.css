@@ -1,0 +1,129 @@
+#con1 {
+    width: 80%;
+    margin:30px ;
+    color: #e6e6e6;
+}
+*{
+    box-sizing: border-box;
+}
+#con1 #div{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* justify-content: space-between; */
+   /* align-items: center; */
+}
+#con1 #img {
+    width: 200px;
+    height: 200px;
+}
+#div1 {
+    margin-left: 20px;
+    /* line-height: 55px; */
+}
+#div2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* justify-content: space-between; */
+}
+#div3 {
+    margin-left: 15px;
+}
+#img1 {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+#title {
+    font-weight: 500;
+}
+#com,#time {
+    color: #dd625e;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: Open Sans,sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: #8a8a8a;
+    font-size: 16px;
+}
+#div5 {
+    display: flex;
+    /* justify-content: space-between; */
+}
+#div6 {
+    background: #8a8a8a;
+    color: #222;
+    border-radius: 10px;
+    width: 30px;
+    padding: 2px 4px;
+    height: 20px;
+    margin-left: 5px;
+}
+#con2 {
+    background-color: black;
+    width: 100%;
+}
+#box {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+#box > #iframe {
+    width: 600px;
+    
+    
+}
+#box1 {
+    width: 40%;
+    margin-left: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+button {
+    background-color: #dd625e;
+    background: #c94f17;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    display: block;
+    line-height: 1.25;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-left: 100px; */
+    vertical-align: middle;
+    width: 100%;
+}
+@media all and (min-width: 381px) and (max-width: 768px) {
+    #div1 {
+        margin-top: 20px;
+    }
+    #box1 {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+@media all and (min-width: 50px) and (max-width: 380px) {
+    #div1 {
+        margin-top: 20px;
+    }
+    #box1 {
+        width: 80%;
+        margin-top: 20px;
+    }
+    iframe {
+        width: 150px;
+    }
+
+
+
+}

@@ -1,0 +1,22 @@
+// Get the restaurants by particular location
+
+db.restaurant.find({city:"Kolkata"})
+
+//All the dishes available in a particular restaurant
+
+db.restaurant.find({name:"restaurant name"}).send(items)
+
+
+
+//Orders delivered by a particular rider
+
+db.riders.find({name:"rider name"}).send(orders)
+
+//All the order of a particular user
+
+db.users.find({name:"user name"}).send(orders)
+
+
+//All the orders from a particular restaurant
+db.restaurant.find({name:"restaurant name"}).send(orders)
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,150px);
+            margin: auto;
+            justify-content:center;
+            margin-top: 50px;
+            gap: 25px;
+            grid-template-areas: 
+            "j k k l"
+            "m m n o"
+            "p q r r";
+
+        }
+        #box > div {
+            background: teal;
+            
+        }
+    .a {
+        grid-area: j;
+    }
+    .b {
+        grid-area: k;
+    }
+    .c {
+        grid-area: l;
+    }
+    .d {
+        grid-area: m;
+    }
+    .e {
+        grid-area: n;
+    }
+    .f {
+        grid-area: o;
+    }
+    .g {
+        grid-area: p;
+    }
+    .h {
+        grid-area: q;
+    }
+    .i {
+        grid-area: r;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+<div class="a"></div>
+    
+    <div class="b"></div>
+    
+    <div class="c"></div>
+    
+    <div class="d"></div>
+    
+    <div class="e"></div>
+    
+    <div class="f"></div>
+    
+    <div class="g"></div>
+    
+    <div class="h"></div>
+    
+    <div class="i"></div>
+    
+</div>
+</body>
+</html>

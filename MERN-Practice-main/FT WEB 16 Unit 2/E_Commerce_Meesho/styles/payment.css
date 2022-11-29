@@ -1,0 +1,49 @@
+#box {
+    width: 20%;
+    margin: auto;
+   height: 300px;
+   margin-top: 30px;
+   padding: 10px;
+   box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+ul{
+display: block;
+list-style-type: none;
+}
+img{
+    height: 20px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.line {
+    width: 100%;
+    height: 0.5px;
+    margin: auto;
+    background-color: black;
+    }
+    .h21 {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    a{
+        text-decoration : none;
+}
+#con {
+    display: flex;
+}

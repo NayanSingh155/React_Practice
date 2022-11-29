@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <style>
+        body {
+            background-color: #222;
+        }
+        #container {
+          
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            column-gap: 20px;
+            row-gap: 20px;
+            width: 90%;
+            margin: 20px auto;
+        }
+        #container #box {
+            background-color: black;
+            box-sizing: border-box;
+            height: 380px;
+            padding: 10px;
+            text-align: center;
+        
+
+        }
+        #box img{
+          width: 90%;
+          height: 250px;
+          /* margin-top: 60px; */
+          
+          
+        }
+        #box h3 {
+            color: #c02d28;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+        }
+        #box h5 {
+            color: #e6e6e6;
+            text-align: left;
+            margin-bottom: 12px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        h1{
+            margin-left: 75px;
+            color: #e6e6e6;
+            margin-top: 20px;
+            font-size: 50px;
+         border-bottom: 1px solid #e6e6e6;
+         width: 90%;
+         padding-bottom: 20px;
+        }
+        @media all and (max-width:768px) and (min-width:381px){
+            #container {
+          
+          /* display: grid; */
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: auto;
+          column-gap: 20px;
+          row-gap: 20px;
+          width: 90%;
+          margin: 20px auto;
+      }
+  h1 {
+      margin-left: 40px;
+  }
+        }
+        @media all and (min-width: 50px) and (max-width: 380px) {
+            #container {
+          
+          /* display: grid; */
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: auto;
+          column-gap: 20px;
+          row-gap: 20px;
+          width: 90%;
+          margin: 20px auto;
+      }
+      h1 {
+      margin-left: 20px;
+      }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header"></header>
+    <h1>Frontend Masters Teachers</h1>
+    <div id="container">
+     
+    </div>
+    <section></section>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+   //  console.log(navbar)
+    document.querySelector(".header").innerHTML=navbar()
+    import footer from "./components/footer.js"
+
+document.querySelector("#footer").innerHTML=footer()
+
+const hamburger = document.querySelector(".menu");
+  const navMenu = document.querySelector(".mobile");
+  hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+  const hamburger1  = document.querySelector(" #footer .menu");
+  const navMenu1 = document.querySelector("#footer .mobile");
+  hamburger1.addEventListener("click", function () {
+    navMenu1.classList.toggle("active");
+  });
+</script>
+<script src="https://kit.fontawesome.com/2ab2a134b6.js" crossorigin="anonymous"></script>
+<script src="./scripts/teacher-data.js"></script>

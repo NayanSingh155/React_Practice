@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: Open Sans, sans-serif;
+}
+
+.login-container,
+.forgot-password-container {
+  width: 100%;
+  background-color: #222222;
+}
+
+.login-wrap,
+.forgot-wrap {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+}
+
+.login-wrap form,
+.forgot-wrap form {
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+.vertical-margin {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.vertical-margin label {
+  margin-bottom: 5px;
+}
+
+.vertical-margin input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  color: #222;
+  display: block;
+  font-family: inherit;
+  padding: 8px 10px;
+  font-size: 17px;
+  width: 100%;
+}
+.vertical-margin input:focus {
+  border-color: #e66225;
+  outline: 0;
+}
+.checkbox-container,
+.submit-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.33);
+}
+.submit-container {
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.alert-msg {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #8a8a8a;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 5px 10px;
+  border-color: #e66225;
+  color: #e66225;
+  display: none;
+}
+.alert-msg.active-alert {
+  display: block;
+}
+
+.submit-container input[type="submit"] {
+  font-size: 19px;
+  padding: 20px 30px;
+  background: #c02d28;
+  border: none;
+  box-shadow: none;
+  max-width: 105px;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+  transition: background 0.2s ease;
+}
+
+.f-submit-container input[type="submit"] {
+  font-size: 19px;
+  padding: 20px 30px;
+  background: #c02d28;
+  border: none;
+  box-shadow: none;
+  max-width: 202px;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+  transition: background 0.2s ease;
+}
+.f-submit-container input[type="submit"]:hover {
+  background: #d43530;
+}
+.submit-container input[type="submit"]:hover {
+  background: #d43530;
+}
+.submit-container a {
+  color: #dd625e;
+  transition: color 0.2s ease;
+}
+.submit-container a:hover {
+  color: #e58480;
+}
+
+@media all and (min-width: 50px) and (max-width: 380px) {
+  .submit-container input[type="submit"] {
+    margin-bottom: 20px;
+  }
+}

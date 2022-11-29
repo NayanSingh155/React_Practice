@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "pop": "12000",
+      "city": "Karachi",
+      "country": "Pakistan",
+      "id": 2
+    },
+    {
+      "pop": "20000000",
+      "city": "Mumbai",
+      "country": "India",
+      "id": 3
+    },
+    {
+      "pop": "22200",
+      "city": "Kolkata",
+      "country": "India",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        height: 400px;
+        width: 400px;
+        background-color: teal;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  //mouseEnter , mouseLeave
+
+  document.querySelector("#container").addEventListener("mouseenter", entering);
+
+  function entering() {
+    document.querySelector("#container").style.backgroundColor = "red";
+  }
+
+   document.querySelector("#container").addEventListener("mouseleave", leaving);
+
+   function leaving() {
+     document.querySelector("#container").style.backgroundColor = "teal";
+   }
+</script>

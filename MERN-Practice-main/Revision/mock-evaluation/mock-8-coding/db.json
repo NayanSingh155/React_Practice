@@ -1,0 +1,13 @@
+{
+  "employees":[
+    {
+      "name":"Ritik Bhardwaj",
+      "age":22,
+      "gender":"Male",
+      "contact":"9876543210",
+      "department":"Finance",
+      "salary":15000,
+      "img":"https://media-exp1.licdn.com/dms/image/D4D35AQFoJ43wRUz6_w/profile-framedphoto-shrink_400_400/0/1657387777722?e=1661410800&v=beta&t=HCDqeqnC3yPysi4BuCoiCWqbrSrg_Q_b4vuYaBWuCOs"
+    }
+  ]
+}

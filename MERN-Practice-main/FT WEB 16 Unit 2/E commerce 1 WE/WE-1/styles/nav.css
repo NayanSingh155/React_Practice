@@ -1,0 +1,35 @@
+#nav {
+    background-color: black;
+    width: 70%;
+    height: 60px;
+    border-radius: 5px;
+    margin: auto;
+margin-top: 50px;
+justify-content: space-around;
+display: flex;
+}
+#nav > div:first-child{
+    height: 100%;
+    width: 30%;
+    color: aquamarine;
+    
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 20px;
+}
+    
+#nav > div:last-child{
+    height: 100%;
+    width: 70%;
+    color: aquamarine;
+
+    font-size: 25px;
+
+    margin-right: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 15px;
+
+}
+
+

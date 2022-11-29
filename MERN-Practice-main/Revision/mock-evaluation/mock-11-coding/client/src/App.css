@@ -1,0 +1,39 @@
+.App{
+  text-align: center;
+}
+.nav {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.nav a{
+  color: aliceblue;
+}
+a{
+  text-decoration: none;
+}
+.sign {
+  margin: 50px auto;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 30px;
+  width: 30%;
+
+}
+.sign >div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+input[type="submit"]{
+  background-color: #333;
+  color: aliceblue;
+  padding: 5px 155px;
+}
+ input[type="submit"]:hover{
+  background-color: aliceblue;
+  color: #333;
+}

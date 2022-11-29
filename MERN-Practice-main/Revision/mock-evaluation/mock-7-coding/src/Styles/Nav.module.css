@@ -1,0 +1,30 @@
+.nav{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav>a{
+    background-color: rgb(167, 67, 67);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+@media only screen and (max-width: 768px) {
+    .nav {
+      
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .nav {
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+}

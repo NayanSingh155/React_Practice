@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Create short links with custom back halves for free."
+    />
+    <meta
+      name="image"
+      content="%PUBLIC URL%/logo192.png"
+      data-react-helmet="true"
+    />
+    <meta
+      name="og:image"
+      content="%PUBLIC URL%/logo192.png"
+      data-react-helmet="true"
+    />
+    <meta
+      name="twitter:image"
+      content="%PUBLIC URL%/logo192.png"
+      data-react-helmet="true"
+    />
+    <meta name="”robots”" content="index, follow" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>Linkz - Free URL, Link Shortener </title>
+    
+    <style>
+      .full-page-loader {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        background-color: #3182ce;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      .full-page-loader > img {
+        width: 300px;
+        animation: 1.8s infinite heartbeat;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.05);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="full-page-loader">
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NzYuODcxLDM1LjE3MWMtNDYuODkxLTQ2Ljg5MS0xMjIuNzktNDYuODk3LTE2OS42ODcsMEwyMDEuMTI5LDE0MS4yMjVjLTExLjIzNCwxMS4yMzQtMTkuNzYzLDI0LjE2Mi0yNS42MDEsMzcuOTY4DQoJCQljLTE0LjIwNiw1Ljk5OC0yNi45NzUsMTQuNjA4LTM4LjAzMSwyNS42NjRMMzUuMjEyLDMwNy4xNDJjLTQ2Ljg5MSw0Ni44OTEtNDYuODk3LDEyMi43OSwwLDE2OS42ODgNCgkJCWM0Ni44OSw0Ni44OSwxMjIuNzkxLDQ2Ljg5NywxNjkuNjg3LDBsMTAyLjI4NC0xMDIuMjg0YzExLjIzNC0xMS4yMzQsMTkuNzYzLTI0LjE2MiwyNS42MDEtMzcuOTY4DQoJCQljMTQuMjA2LTUuOTk4LDI2Ljk3NC0xNC42MDgsMzguMDMtMjUuNjY0bDEwNi4wNTYtMTA2LjA1NUM1MjMuNjU0LDE1OC4wNzYsNTIzLjY1NCw4MS45NTQsNDc2Ljg3MSwzNS4xNzF6IE0xODIuNjAyLDI4Ny4wMTgNCgkJCWM1LjAzMSw4LjUzMywxMS4yMDYsMTYuNTc0LDE4LjUyNywyMy44OTVjNy4yNDgsNy4yNDgsMTUuMjM1LDEzLjQ0NCwyMy44NzgsMTguNTQzbC04My43NCw4My43NA0KCQkJYy0xMS42OTYsMTEuNjk2LTMwLjcyNiwxMS42OTYtNDIuNDIzLDBjLTExLjcyMy0xMS43MjMtMTEuNzI0LTMwLjY5OCwwLTQyLjQyMkwxODIuNjAyLDI4Ny4wMTh6IE0yODUuOTczLDM1My4zMzUNCgkJCUwxODMuNjg5LDQ1NS42MTljLTM1LjA4NywzNS4wODctOTIuMTc4LDM1LjA4Ny0xMjcuMjY2LDBjLTM1LjE2OC0zNS4xNjktMzUuMTcyLTkyLjA5MywwLTEyNy4yNjYNCgkJCWMxMDYuNzczLTEwNi41MTIsMTAyLjg5LTEwMy40ODYsMTA5LjgxNC0xMDkuMDMxYy0wLjcwOCwxMi42NzUsMC41NzYsMjUuNDM5LDMuODU5LDM3Ljc4bC05Mi40NjIsOTIuNDYxDQoJCQljLTIzLjQ0NSwyMy40NDYtMjMuNDQ4LDYxLjM5NiwwLDg0Ljg0NGMyMy4zOTEsMjMuMzkxLDYxLjQ1MiwyMy4zOTIsODQuODQ0LDBsMTAyLjI4My0xMDIuMjgzDQoJCQljMjMuNDQ3LTIzLjQ0NiwyMy40NDktNjEuMzk2LDAtODQuODQ0Yy0xMC42LTEwLjYtMTEuNTM4LTI2Ljk5MS0zLjIxOS0zOC42MTZjOS4wMTgsNC4zNTQsMTcuMjA3LDEwLjE4MiwyNC40MywxNy40MDUNCgkJCUMzMjEuMDYsMjYxLjE1NywzMjEuMDYsMzE4LjI0OCwyODUuOTczLDM1My4zMzV6IE0zMjUuNzExLDIyOC43NTRjLTUuMDMtOC41MzQtMTEuMjA2LTE2LjU3NC0xOC41MjctMjMuODk2DQoJCQljLTcuMjQ5LTcuMjQ4LTE1LjIzNi0xMy40NDQtMjMuODc4LTE4LjU0M2w4Ny41MTItODcuNTEyYzExLjcyMi0xMS43MjIsMzAuNjk4LTExLjcyNCw0Mi40MjIsMA0KCQkJYzExLjcyMywxMS43MjMsMTEuNzI1LDMwLjY5OCwwLjAwMSw0Mi40MjJMMzI1LjcxMSwyMjguNzU0eiBNNDU1LjY2LDE4My42NDdMMzQ5LjYwNSwyODkuNzAzDQoJCQljLTIuNDA1LDIuNDA1LTQuOTE2LDQuNjU0LTcuNTMsNi43NDZjMC43MDgtMTIuNjc0LTAuNTc2LTI1LjQzOS0zLjg1OS0zNy43OGw5Ni4yMzMtOTYuMjMzDQoJCQljMjMuNDQ1LTIzLjQ0MywyMy40NS02MS4zOTYtMC4wMDEtODQuODQ0Yy0yMy40NDUtMjMuNDQ2LTYxLjM5Ni0yMy40NDktODQuODQzLDBMMjQzLjU1LDE4My42NDgNCgkJCWMtMjMuNDQ1LDIzLjQ0NS0yMy40NDgsNjEuMzk2LDAsODQuODQ0YzEwLjYsMTAuNiwxMS41MzgsMjYuOTkxLDMuMjE5LDM4LjYxNmMtOS4wMTgtNC4zNTQtMTcuMjA3LTEwLjE4Mi0yNC40My0xNy40MDQNCgkJCWMtMzUuMDg2LTM1LjA4OS0zNS4wODYtOTIuMTc5LDAuMDAxLTEyNy4yNjhMMzI4LjM5NSw1Ni4zODFjMzUuMTY4LTM1LjE2OCw5Mi4wOTItMzUuMTczLDEyNy4yNjYsMA0KCQkJQzQ5MC43NDcsOTEuNDY5LDQ5MC43NDcsMTQ4LjU2LDQ1NS42NiwxODMuNjQ3eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"  alt="Linkz is Loading..."/>
+    </div></div>
+    
+  </body>
+</html>

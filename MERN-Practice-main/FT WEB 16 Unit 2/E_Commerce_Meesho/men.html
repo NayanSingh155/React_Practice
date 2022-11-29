@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./styles/men.css">
+   <link rel="stylesheet" href="./styles/nav.css">
+   <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+  </head>
+  <body>
+      
+  
+          <div class="nav">
+  <img src="https://etimg.etb2bimg.com/photo/86809724.cms" alt="Meesho">
+  <input id="search" placeholder="🔍Try search Kurti,Saree,Shirt or Search by Product Code">
+  <p onclick="app()">📱Download
+    App</p>
+<p id="bec">Become Supplier</p>
+<span id="pro">Log <br> Out
+</span>
+<span onClick="location.href='cart.html';">🤸 <br>Cart</span>
+
+      </div> 
+      <div class="nav1">
+          <div>Women Ethnic</div>
+          <div class="women">Women Western</div>
+          <div>Jewellery & Accessories</div>
+          <div>Men</div>
+          <div>Beauty & Health</div>
+          <div>Bags & Footwear</div>
+          <div>Home & Kitchen</div>
+          <div>Kids</div>
+          <div>Electronics</div>
+      </div>
+           <select onchange="sortItem()" name="" id="">
+        <option value="s">Sort by</option>
+    <option value="H2L">Hight To Low</option>
+    <option value="H2L">Low To High</option></select>
+
+    <div id="box">
+        
+    </div>
+</body>
+
+</html>
+<script src="./script/men.js">
+    
+</script>
+<script>
+    function app(){
+    window.location.href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow"
+    target="_blank";
+
+}
+document.querySelector(".women").addEventListener("click",function(){
+    window.location.href="women.html";
+
+})
+document.querySelector("#bec").addEventListener("click",function(){
+    window.location.href="https://supplier.meesho.com/?utm_source=meesho&utm_medium=website&utm_campaign=header"
+})
+document.querySelector("#pro").addEventListener("click",function(){
+    window.location.href="index.html";
+})
+</script>

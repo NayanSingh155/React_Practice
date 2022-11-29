@@ -1,0 +1,33 @@
+.Box {
+/* text-align:center; */
+width: 90%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;
+gap: 15px;
+row-gap: 30px;
+margin-top: 20px;
+
+}
+.Box img {
+    height: 150px;
+    width: 250px;
+}
+h1{
+    text-align: center;
+}
+.child {
+    display: flex;
+}
+.child > div {
+    margin-left: 15px;
+    margin-top: -10px;
+    line-height: 20px;
+}
+.btn{
+    margin-left: 50px;
+}
+.btn button {
+    margin-right: 10px;
+}

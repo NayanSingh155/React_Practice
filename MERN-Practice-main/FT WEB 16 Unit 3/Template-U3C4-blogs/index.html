@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <!--DO NOT CHANGE THIS ID's-->
+        <!--Append the horizontal navbar(sidebar) here only-->
+        
+
+      </div>
+
+      <div id="main">
+        <!--DO NOT CHANGE THIS ID's-->
+        <!--Append psychology blogs here only-->
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module">
+  // let input = document.getElementById("searchbar")
+import sidebar from "./components/sidebar.js"
+document.getElementById("sidebar").innerHTML=sidebar()
+let url1 ="https://blog-search-u3c4.herokuapp.com/api/blogs/psychology"
+import {apiCall,appendArticles} from  "./scripts/main.js"
+let main = document.getElementById("main")
+ let response = await   apiCall(url1)
+//  console.log(response)
+  appendArticles(response,main)
+  let input=document.getElementById("searchbar")
+  input.addEventListener("keypress",function(){
+    go(event)
+  })
+  function go(e){
+  //  console.log(input.value)
+  if(input.value=="explained" && e.code=="Enter"){
+    localStorage.setItem("search_term","explained")
+    window.location.href="search.html"
+  }
+ }
+</script>
+<script>
+  
+</script>
